@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T22:18:42+09:00",
-  "engine_version": "V4.3.1",
+  "generated_at": "2026-10-05T23:04:01+09:00",
+  "engine_version": "V4.4.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "article automation generated",
@@ -249,6 +249,30 @@
     "experience_id": null,
     "status": "READY_FOR_DRAFT"
   },
+  "draft_review": {
+    "draft_id": 1,
+    "status": "DRAFT",
+    "topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
+    "title": "창문 틀 물자국 누수일까 결로일까? 실패 없이 원인 찾는 5단계 점검법",
+    "search_description": "창틀 주변에 물방울이 맺히거나 물자국이 번질 때 누수인지 단순 결로인지 판별하는 실전 점검 순서입니다. 날씨와 발생 위치, 레일 배수구 확인법을 정리했습니다.",
+    "permalink": "window-frame-water-stain-leak-vs-condensation-inspection",
+    "provider": "gemini-3.8-flash",
+    "source_count": 2,
+    "qc": {
+      "version": null,
+      "publish_gate": null,
+      "editorial_readiness_score": null,
+      "critical_count": null,
+      "warning_count": null,
+      "info_count": null,
+      "metrics": {},
+      "outline": {},
+      "issues": [],
+      "score_note": null
+    },
+    "latest_publish_check": null,
+    "body_exposed": false
+  },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
     "candidates": {
@@ -293,7 +317,10 @@
     "experiences": 0,
     "published": 0,
     "approved": 0,
-    "verified_experiences": 0
+    "verified_experiences": 0,
+    "draft_versions": 0,
+    "publish_checks": 0,
+    "gsc_snapshots": 0
   },
   "connections": {
     "naver_credentials_present": true,
@@ -306,7 +333,9 @@
     "local_ai_writer_requires_api_key": true,
     "chatgpt_subscription_is_not_local_api_access": true,
     "chatgpt_handoff_requires_one_copy_paste_roundtrip": true,
-    "blogger_api_custom_permalink_not_guaranteed": true
+    "blogger_api_custom_permalink_not_guaranteed": true,
+    "image_generation_not_connected": true,
+    "generic_google_indexing_api_not_used_for_blogger_posts": true
   },
   "safety": {
     "publishing_requires_user_approval": true,
@@ -319,11 +348,13 @@
     "actual_visible_controls": true,
     "automation_summary": true,
     "workflow_summary": true,
-    "errors_and_last_action": true
+    "errors_and_last_action": true,
+    "draft_quality_summary": true,
+    "post_publish_verification_summary": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
-    "version": "V4.3.1",
-    "updated_at": "2026-10-05T22:18:42+09:00"
+    "version": "V4.4.0",
+    "updated_at": "2026-10-05T23:04:01+09:00"
   }
 }
