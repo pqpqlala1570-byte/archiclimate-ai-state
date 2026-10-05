@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v2",
-  "generated_at": "2026-10-05T19:57:49+09:00",
+  "generated_at": "2026-10-05T19:58:35+09:00",
   "engine_version": "V4.0.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "safe second triage apply",
+    "last_action": "strong reject bulk apply",
     "result": "OK",
-    "detail": "{'changed': 27, 'claim_review_kept': 20, 'experience_review_kept': 3, 'context_only_kept': 4, 'strong_reject_untouched': 5, 'manual_review_untouched': 0}",
-    "updated_at": "2026-10-05T19:57:40+09:00"
+    "detail": "{'changed': 5}",
+    "updated_at": "2026-10-05T19:58:24+09:00"
   },
   "ui": {
     "current_page": "검토",
@@ -24,27 +24,11 @@
       "주장 VERIFIED/CONTESTED/REJECTED 검토"
     ],
     "selection": {
-      "candidate_title": "네이버 블로그 애드포스트 수익 월 10만원 달성, 직접 해보니 달라진....",
-      "candidate_status": "NEW",
-      "source": "Naver Blog",
-      "learning_policy": "REVIEW_BEFORE_USE",
-      "triage_recommendation": "HUMAN_REVIEW",
-      "triage_flags": [
-        "NUMERIC_OR_INCOME_CLAIM",
-        "FIRSTHAND_SIGNAL_NEEDS_SOURCE_CHECK",
-        "NON_PRIMARY_SOURCE"
-      ],
-      "second_triage_recommendation": "STRONG_REJECT_RECOMMENDED",
-      "second_triage_reason": "검증 어려운 수치/수익 주장 + 비1차 출처"
+      "mode": "APPROVAL MODE"
     },
-    "notice": "",
-    "counters": {
-      "candidate_total": 46,
-      "candidate_new": 5,
-      "claims_proposed": 0,
-      "claims_verified": 0
-    },
-    "updated_at": "2026-10-05T19:57:40+09:00"
+    "notice": "화면 캡처 없이 현재 메뉴와 가능한 작업을 AI Bridge에 공유",
+    "counters": {},
+    "updated_at": "2026-10-05T19:58:24+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -54,8 +38,7 @@
       "total": 46,
       "status": {
         "KEEP": 40,
-        "REJECT": 1,
-        "NEW": 5
+        "REJECT": 6
       },
       "source": {
         "Naver Blog": 23,
@@ -128,6 +111,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.0.0",
-    "updated_at": "2026-10-05T19:57:49+09:00"
+    "updated_at": "2026-10-05T19:58:35+09:00"
   }
 }
