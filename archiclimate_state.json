@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v2",
-  "generated_at": "2026-10-05T19:54:00+09:00",
+  "generated_at": "2026-10-05T19:54:17+09:00",
   "engine_version": "V4.0.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -16,6 +16,9 @@
       "46개 자동 1차검토 실행",
       "안전 추천만 일괄 반영",
       "사람검토 후보만 보기",
+      "2차 자동분류 실행",
+      "2차 안전추천 반영",
+      "강한 제외추천 일괄 REJECT",
       "전체 후보 보기",
       "주장 PROPOSED 등록",
       "주장 VERIFIED/CONTESTED/REJECTED 검토"
@@ -29,7 +32,9 @@
       "triage_flags": [
         "MIXED_ADSENSE_ADPOST",
         "NON_PRIMARY_SOURCE"
-      ]
+      ],
+      "second_triage_recommendation": null,
+      "second_triage_reason": null
     },
     "notice": "",
     "counters": {
@@ -38,7 +43,7 @@
       "claims_proposed": 0,
       "claims_verified": 0
     },
-    "updated_at": "2026-10-05T19:48:07+09:00"
+    "updated_at": "2026-10-05T19:54:08+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -122,6 +127,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.0.0",
-    "updated_at": "2026-10-05T19:54:00+09:00"
+    "updated_at": "2026-10-05T19:54:17+09:00"
   }
 }
