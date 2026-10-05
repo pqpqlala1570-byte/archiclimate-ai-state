@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T21:59:52+09:00",
+  "generated_at": "2026-10-05T22:00:39+09:00",
   "engine_version": "V4.3.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -54,18 +54,8 @@
         "description": ""
       },
       {
-        "id": "copy_chatgpt_request",
-        "label": "ChatGPT 글쓰기 요청 복사",
-        "kind": "button",
-        "section": "글작성",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "import_chatgpt_result",
-        "label": "ChatGPT 작성 결과 가져오기",
+        "id": "generate_article",
+        "label": "글 자동 제작",
         "kind": "button",
         "section": "글작성",
         "visible": true,
@@ -79,8 +69,7 @@
       "1번 주제로 선택",
       "2번 주제로 선택",
       "3번 주제로 선택",
-      "ChatGPT 글쓰기 요청 복사",
-      "ChatGPT 작성 결과 가져오기"
+      "글 자동 제작"
     ],
     "recommended_control_id": "copy_chatgpt_request",
     "selection": {
@@ -149,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T21:59:38+09:00"
+    "updated_at": "2026-10-05T22:00:29+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -382,6 +371,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.0",
-    "updated_at": "2026-10-05T21:59:52+09:00"
+    "updated_at": "2026-10-05T22:00:39+09:00"
   }
 }
