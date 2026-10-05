@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T23:38:51+09:00",
+  "generated_at": "2026-10-05T23:39:10+09:00",
   "engine_version": "V4.4.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,24 +10,54 @@
     "updated_at": "2026-10-05T23:13:40+09:00"
   },
   "ui": {
-    "current_page": "초안",
-    "page_title": "② 초안·QC",
+    "current_page": "자동화",
+    "page_title": "① 블로그 자동화",
     "controls": [
       {
-        "id": "save_draft_edit",
-        "label": "수정본 저장 + QC 재검사",
+        "id": "run_daily_content",
+        "label": "오늘의 콘텐츠 자동 분석 시작",
         "kind": "button",
-        "section": "초안",
+        "section": "자동분석",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "save_draft_note",
-        "label": "검토 메모 저장",
+        "id": "select_top3_1",
+        "label": "1번 주제로 선택",
         "kind": "button",
-        "section": "초안",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_2",
+        "label": "2번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_3",
+        "label": "3번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "generate_article",
+        "label": "글 자동 제작",
+        "kind": "button",
+        "section": "글작성",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -35,19 +65,23 @@
       }
     ],
     "available_actions": [
-      "수정본 저장 + QC 재검사",
-      "검토 메모 저장"
+      "오늘의 콘텐츠 자동 분석 시작",
+      "1번 주제로 선택",
+      "2번 주제로 선택",
+      "3번 주제로 선택",
+      "글 자동 제작"
     ],
-    "recommended_control_id": null,
+    "recommended_control_id": "publish_draft",
     "selection": {
-      "draft_id": 1,
-      "status": "DRAFT",
-      "qc_gate": "PASS",
-      "qc_score": 100,
+      "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
       "mode": "APPROVAL MODE"
     },
     "notice": "",
-    "counters": {},
+    "counters": {
+      "top3": 3,
+      "selected": 1,
+      "drafts": 1
+    },
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -104,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T23:13:40+09:00"
+    "updated_at": "2026-10-05T23:38:56+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -272,9 +306,9 @@
     "provider": "gemini-3.8-flash",
     "source_count": 2,
     "qc": {
-      "version": "pro-qc-v1",
+      "version": "pro-qc-v2",
       "publish_gate": "PASS",
-      "editorial_readiness_score": 100,
+      "editorial_readiness_score": 94,
       "critical_count": 0,
       "warning_count": 1,
       "info_count": 1,
@@ -317,16 +351,30 @@
           "severity": "WARNING",
           "code": "NUMERIC_CLAIM_REVIEW",
           "message": "수치·기간·비율 표현 1건을 근거와 대조하세요.",
-          "blocking": false
+          "blocking": false,
+          "details": [
+            "10분 | 3단계: 창호 유리면과 프레임 접합부 확인 | 유리 표면의 물방울을 마른 수건으로 닦아낸 후 실내 환기를 10분 이상 진행했을 때 표면 건조 속도를 살펴보면 결로 여부를 쉽게 가늠할 수 있습니다."
+          ]
         }
       ],
       "trace": {
-        "numeric_claims": [],
+        "numeric_claims": [
+          {
+            "matched_value": "10분",
+            "snippet": "유리 표면의 물방울을 마른 수건으로 닦아낸 후 실내 환기를 10분 이상 진행했을 때 표면 건조 속도를 살펴보면 결로 여부를 쉽게 가늠할 수 있습니다.",
+            "section_h2": "3단계: 창호 유리면과 프레임 접합부 확인",
+            "verification_status": "REVIEW_REQUIRED",
+            "candidate_source_urls": [
+              "https://www.molit.go.kr",
+              "https://www.kict.re.kr"
+            ]
+          }
+        ],
         "experience_verified": false,
         "unknown_external_links": [],
         "fabricated_source_urls": []
       },
-      "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다."
+      "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다. Warning이 남아 있으면 100점이 될 수 없습니다."
     },
     "latest_publish_check": null,
     "body_exposed": false
@@ -413,6 +461,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.4.1",
-    "updated_at": "2026-10-05T23:38:51+09:00"
+    "updated_at": "2026-10-05T23:39:10+09:00"
   }
 }
