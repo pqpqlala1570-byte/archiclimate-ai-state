@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T20:58:51+09:00",
-  "engine_version": "V4.2.1",
+  "generated_at": "2026-10-05T21:59:34+09:00",
+  "engine_version": "V4.3.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "topic selected",
@@ -363,6 +363,7 @@
   "limitations": {
     "local_ai_writer_requires_api_key": true,
     "chatgpt_subscription_is_not_local_api_access": true,
+    "chatgpt_handoff_requires_one_copy_paste_roundtrip": true,
     "blogger_api_custom_permalink_not_guaranteed": true
   },
   "safety": {
@@ -380,7 +381,7 @@
   },
   "bridge": {
     "transport": "github-sanitized-state",
-    "version": "V4.2.1",
-    "updated_at": "2026-10-05T20:58:51+09:00"
+    "version": "V4.3.0",
+    "updated_at": "2026-10-05T21:59:34+09:00"
   }
 }
