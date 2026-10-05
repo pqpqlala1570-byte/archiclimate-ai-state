@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T20:58:35+09:00",
+  "generated_at": "2026-10-05T20:58:51+09:00",
   "engine_version": "V4.2.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -149,7 +149,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T20:58:25+09:00"
+    "updated_at": "2026-10-05T20:58:46+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -381,6 +381,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.2.1",
-    "updated_at": "2026-10-05T20:58:35+09:00"
+    "updated_at": "2026-10-05T20:58:51+09:00"
   }
 }
