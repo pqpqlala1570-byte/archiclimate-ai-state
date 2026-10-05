@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v2",
-  "generated_at": "2026-10-05T19:44:36+09:00",
+  "generated_at": "2026-10-05T19:48:08+09:00",
   "engine_version": "V4.0.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "human review filter",
+    "last_action": "candidate REJECT",
     "result": "OK",
-    "detail": "HUMAN_REVIEW=33",
-    "updated_at": "2026-10-05T19:44:30+09:00"
+    "detail": "Naver Blog",
+    "updated_at": "2026-10-05T19:48:07+09:00"
   },
   "ui": {
     "current_page": "검토",
@@ -21,13 +21,12 @@
       "주장 VERIFIED/CONTESTED/REJECTED 검토"
     ],
     "selection": {
-      "candidate_title": "구글 블로그로 돈 버는 방법: 블로거(Blogger)와 애드센스로 시작하는 ....",
+      "candidate_title": "구글 애드센스 수익화 방법｜승인부터 광고수익 만드는 방법까지",
       "candidate_status": "NEW",
       "source": "Naver Blog",
       "learning_policy": "REVIEW_BEFORE_USE",
       "triage_recommendation": "HUMAN_REVIEW",
       "triage_flags": [
-        "NUMERIC_OR_INCOME_CLAIM",
         "MIXED_ADSENSE_ADPOST",
         "NON_PRIMARY_SOURCE"
       ]
@@ -35,11 +34,11 @@
     "notice": "",
     "counters": {
       "candidate_total": 46,
-      "candidate_new": 33,
+      "candidate_new": 32,
       "claims_proposed": 0,
       "claims_verified": 0
     },
-    "updated_at": "2026-10-05T19:44:30+09:00"
+    "updated_at": "2026-10-05T19:48:07+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -49,7 +48,8 @@
       "total": 46,
       "status": {
         "KEEP": 13,
-        "NEW": 33
+        "NEW": 32,
+        "REJECT": 1
       },
       "source": {
         "Naver Blog": 23,
@@ -122,6 +122,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.0.0",
-    "updated_at": "2026-10-05T19:44:36+09:00"
+    "updated_at": "2026-10-05T19:48:08+09:00"
   }
 }
