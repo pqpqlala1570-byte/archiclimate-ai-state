@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T23:13:39+09:00",
+  "generated_at": "2026-10-05T23:13:56+09:00",
   "engine_version": "V4.4.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "article automation generated",
+    "last_action": "draft edited and rechecked",
     "result": "OK",
-    "detail": "draft_id=1",
-    "updated_at": "2026-10-05T22:15:56+09:00"
+    "detail": "draft_id=1 qc=PASS score=100",
+    "updated_at": "2026-10-05T23:13:40+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -104,7 +104,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T23:13:28+09:00"
+    "updated_at": "2026-10-05T23:13:40+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -266,7 +266,7 @@
     "draft_id": 1,
     "status": "DRAFT",
     "topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-    "title": "창문 틀 물자국 누수일까 결로일까? 실패 없이 원인 찾는 5단계 점검법",
+    "title": "창틀 물자국, 누수인지 결로인지 구분하는 5단계 점검법",
     "search_description": "창틀 주변에 물방울이 맺히거나 물자국이 번질 때 누수인지 단순 결로인지 판별하는 실전 점검 순서입니다. 날씨와 발생 위치, 레일 배수구 확인법을 정리했습니다.",
     "permalink": "window-frame-water-stain-leak-vs-condensation-inspection",
     "provider": "gemini-3.8-flash",
@@ -281,7 +281,7 @@
       "metrics": {
         "chars_no_spaces": 2541,
         "word_tokens": 875,
-        "title_length": 39,
+        "title_length": 30,
         "meta_length": 88,
         "h2_count": 7,
         "h3_count": 0,
@@ -292,7 +292,7 @@
         "table_count": 1,
         "source_count": 2,
         "numeric_claim_candidates": 1,
-        "title_similarity": 0.4
+        "title_similarity": 0.361
       },
       "outline": {
         "h2": [
@@ -370,7 +370,7 @@
     "published": 0,
     "approved": 0,
     "verified_experiences": 0,
-    "draft_versions": 0,
+    "draft_versions": 1,
     "publish_checks": 0,
     "gsc_snapshots": 0
   },
@@ -407,6 +407,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.4.0",
-    "updated_at": "2026-10-05T23:13:40+09:00"
+    "updated_at": "2026-10-05T23:13:56+09:00"
   }
 }
