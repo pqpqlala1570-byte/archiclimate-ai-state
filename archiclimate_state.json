@@ -1,0 +1,76 @@
+{
+  "schema": "archiclimate-ai-bridge-state-v1",
+  "generated_at": "2026-10-05T17:28:46+09:00",
+  "engine_version": "V3.3.2",
+  "privacy": "sanitized_aggregate_only",
+  "runtime": {
+    "last_action": "AI Bridge started",
+    "result": "OK",
+    "detail": "sanitized read-only state endpoint",
+    "updated_at": "2026-10-05T16:42:47+09:00"
+  },
+  "knowledge": {
+    "last_scan": "2026-10-05T16:01:30+09:00",
+    "official_checked": 6,
+    "official_pending": 0,
+    "candidates": {
+      "total": 46,
+      "status": {
+        "NEW": 46
+      },
+      "source": {
+        "Naver Blog": 23,
+        "YouTube": 16,
+        "Google News": 7
+      },
+      "relevance_tier": {
+        "HIGH": 22,
+        "UNSET": 23,
+        "REVIEW": 1
+      },
+      "learning_policy": {
+        "CONTEXT_ONLY": 7,
+        "REVIEW_BEFORE_USE": 30,
+        "ELIGIBLE_FOR_CLAIM_REVIEW": 9
+      },
+      "source_type": {
+        "MONETIZATION_GUIDE": 6,
+        "FIRSTHAND_CASE": 3,
+        "APPROVAL_GUIDE": 10,
+        "SEO_GUIDE": 4,
+        "COURSE_CONTENT": 13,
+        "AUTOMATION_GUIDE": 1,
+        "COURSE_REVIEW_REPUTATION": 2,
+        "NEWS_REPORT": 7
+      }
+    }
+  },
+  "knowledge_base": {
+    "rules": 39,
+    "sources": 17,
+    "manifest_sources": 17
+  },
+  "database": {
+    "exists": true,
+    "drafts": 0,
+    "experiences": 0,
+    "published": 0
+  },
+  "connections": {
+    "naver_credentials_present": true,
+    "gemini_key_present": false,
+    "google_client_secret_present": true,
+    "google_oauth_token_present": true
+  },
+  "safety": {
+    "publishing_requires_user_approval": true,
+    "secrets_exposed": false,
+    "article_bodies_exposed": false,
+    "screen_capture_enabled": false
+  },
+  "bridge": {
+    "transport": "github-public-sanitized-state",
+    "version": "V3.3.2",
+    "updated_at": "2026-10-05T17:28:46+09:00"
+  }
+}
