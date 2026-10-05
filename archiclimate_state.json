@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T21:59:34+09:00",
+  "generated_at": "2026-10-05T21:59:52+09:00",
   "engine_version": "V4.3.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "topic selected",
+    "last_action": "experience auto match",
     "result": "OK",
-    "detail": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-    "updated_at": "2026-10-05T20:58:25+09:00"
+    "detail": "no verified match; continue without fabricated experience",
+    "updated_at": "2026-10-05T21:59:38+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -54,20 +54,20 @@
         "description": ""
       },
       {
-        "id": "experience_yes",
-        "label": "이 주제 관련 직접 경험 있음",
+        "id": "copy_chatgpt_request",
+        "label": "ChatGPT 글쓰기 요청 복사",
         "kind": "button",
-        "section": "경험",
+        "section": "글작성",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "experience_no",
-        "label": "직접 경험 없음 — 그대로 진행",
+        "id": "import_chatgpt_result",
+        "label": "ChatGPT 작성 결과 가져오기",
         "kind": "button",
-        "section": "경험",
+        "section": "글작성",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -79,10 +79,10 @@
       "1번 주제로 선택",
       "2번 주제로 선택",
       "3번 주제로 선택",
-      "이 주제 관련 직접 경험 있음",
-      "직접 경험 없음 — 그대로 진행"
+      "ChatGPT 글쓰기 요청 복사",
+      "ChatGPT 작성 결과 가져오기"
     ],
-    "recommended_control_id": "experience_gate",
+    "recommended_control_id": "copy_chatgpt_request",
     "selection": {
       "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
       "mode": "APPROVAL MODE"
@@ -114,21 +114,21 @@
       },
       {
         "stage": "EXPERIENCE",
-        "title": "실제 경험 확인",
-        "status": "ACTION",
-        "detail": "경험이 있을 때만 구조화 입력. 없으면 바로 다음 단계",
+        "title": "실제 경험 자동처리",
+        "status": "DONE",
+        "detail": "기존 검증 경험을 자동 매칭하고, 없으면 경험 없이 자동 진행",
         "page": "자동화",
-        "control_id": "experience_gate",
-        "control_label": "경험 있음 / 없음"
+        "control_id": null,
+        "control_label": null
       },
       {
         "stage": "DRAFT",
         "title": "글 자동 제작",
-        "status": "WAIT",
-        "detail": "주제/경험 확인 후 실행",
+        "status": "ACTION",
+        "detail": "ChatGPT handoff로 작성 후 결과 1회 가져오기",
         "page": "자동화",
-        "control_id": "generate_article",
-        "control_label": "글 자동 제작"
+        "control_id": "copy_chatgpt_request",
+        "control_label": "ChatGPT 글쓰기 요청 복사"
       },
       {
         "stage": "APPROVAL",
@@ -149,7 +149,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T20:58:46+09:00"
+    "updated_at": "2026-10-05T21:59:38+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -303,9 +303,9 @@
       }
     ],
     "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-    "has_experience": null,
+    "has_experience": false,
     "experience_id": null,
-    "status": "TOPIC_SELECTED"
+    "status": "READY_FOR_DRAFT"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -382,6 +382,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.0",
-    "updated_at": "2026-10-05T21:59:34+09:00"
+    "updated_at": "2026-10-05T21:59:52+09:00"
   }
 }
