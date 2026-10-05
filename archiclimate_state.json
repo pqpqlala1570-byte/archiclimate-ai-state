@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T23:13:56+09:00",
-  "engine_version": "V4.4.0",
+  "generated_at": "2026-10-05T23:38:51+09:00",
+  "engine_version": "V4.4.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "draft edited and rechecked",
@@ -320,6 +320,12 @@
           "blocking": false
         }
       ],
+      "trace": {
+        "numeric_claims": [],
+        "experience_verified": false,
+        "unknown_external_links": [],
+        "fabricated_source_urls": []
+      },
       "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다."
     },
     "latest_publish_check": null,
@@ -406,7 +412,7 @@
   },
   "bridge": {
     "transport": "github-sanitized-state",
-    "version": "V4.4.0",
-    "updated_at": "2026-10-05T23:13:56+09:00"
+    "version": "V4.4.1",
+    "updated_at": "2026-10-05T23:38:51+09:00"
   }
 }
