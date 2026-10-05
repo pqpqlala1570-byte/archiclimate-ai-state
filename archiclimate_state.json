@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T20:43:10+09:00",
+  "generated_at": "2026-10-05T20:47:56+09:00",
   "engine_version": "V4.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "claim evidence search",
+    "last_action": "daily content automation",
     "result": "OK",
-    "detail": "claim_id=5fe1706fc35d results=12",
-    "updated_at": "2026-10-05T20:30:22+09:00"
+    "detail": "sources=19 top3=3 mode=APPROVAL MODE",
+    "updated_at": "2026-10-05T20:47:53+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -22,18 +22,51 @@
         "enabled": true,
         "danger": false,
         "description": ""
+      },
+      {
+        "id": "select_top3_1",
+        "label": "1번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_2",
+        "label": "2번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_3",
+        "label": "3번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
       }
     ],
     "available_actions": [
-      "오늘의 콘텐츠 자동 분석 시작"
+      "오늘의 콘텐츠 자동 분석 시작",
+      "1번 주제로 선택",
+      "2번 주제로 선택",
+      "3번 주제로 선택"
     ],
-    "recommended_control_id": "run_daily_content",
+    "recommended_control_id": "select_top3",
     "selection": {
       "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {
-      "top3": 0,
+      "top3": 3,
       "selected": 0,
       "drafts": 0
     },
@@ -41,7 +74,7 @@
       {
         "stage": "ANALYZE",
         "title": "오늘의 콘텐츠 자동 분석",
-        "status": "ACTION",
+        "status": "DONE",
         "detail": "검색·중복·사이트 적합성·승인/수익 점수를 한 번에 분석",
         "page": "자동화",
         "control_id": "run_daily_content",
@@ -50,7 +83,7 @@
       {
         "stage": "TOPIC",
         "title": "TOP3 선택",
-        "status": "WAIT",
+        "status": "ACTION",
         "detail": "분석 결과 TOP3 중 하나 선택",
         "page": "자동화",
         "control_id": "select_top3",
@@ -93,19 +126,86 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T20:43:01+09:00"
+    "updated_at": "2026-10-05T20:47:53+09:00"
   },
   "automation": {
-    "version": null,
-    "generated_at": null,
-    "mode": null,
-    "query": null,
-    "source_count": null,
-    "top3": null,
+    "version": "V4.2.0",
+    "generated_at": "2026-10-05T20:47:53+09:00",
+    "mode": "APPROVAL MODE",
+    "query": "누수 결로 곰팡이 단열 환기 방수 배수 건축 하자",
+    "source_count": 19,
+    "top3": [
+      {
+        "topic": "🏢그냥두면 누수,결로,곰팡이에 들뜸까지!!⚠️#외벽방수 #외벽누수 #누수 #방수 #결로 #곰팡이",
+        "approval_score": 76.7,
+        "monetization_score": 70.1,
+        "mode_score": 76.7,
+        "search_intent": "INFORMATIONAL",
+        "similarity_to_existing": 0.27,
+        "site_fit": 20,
+        "specificity": 17.7,
+        "experience_input": 0,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 1,
+        "risks": [
+          "직접 경험 연결 없음"
+        ],
+        "observed_keyword": "누수 · 결로 · 곰팡이",
+        "source_title": "🏢그냥두면 누수,결로,곰팡이에 들뜸까지!!⚠️#외벽방수 #외벽누수 #누수 #방수 #결로 #곰팡이",
+        "source_url": "https://www.youtube.com/watch?v=A6ahIIBWlls",
+        "source": "YouTube",
+        "automation_score": 84.7
+      },
+      {
+        "topic": "단열재 없이 벽지만 바른 외벽, 결로·곰팡이 뜯고 단열 제대로 #결로 #곰팡이 #외벽단열 #단열공사 #KCC창호",
+        "approval_score": 76.1,
+        "monetization_score": 70.4,
+        "mode_score": 76.1,
+        "search_intent": "INFORMATIONAL",
+        "similarity_to_existing": 0.32,
+        "site_fit": 20,
+        "specificity": 18,
+        "experience_input": 0,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 1,
+        "risks": [
+          "직접 경험 연결 없음"
+        ],
+        "observed_keyword": "결로 · 곰팡이 · 단열",
+        "source_title": "단열재 없이 벽지만 바른 외벽, 결로·곰팡이 뜯고 단열 제대로 #결로 #곰팡이 #외벽단열 #단열공사 #KCC창호",
+        "source_url": "https://www.youtube.com/watch?v=7Llu_LrvInI",
+        "source": "YouTube",
+        "automation_score": 84.1
+      },
+      {
+        "topic": "아직도 방수,단열,결로,누수로 고생하세요?이렇게 시공하세요/제대로 시공해야 문제가 안생깁니다-정건하우징",
+        "approval_score": 73.5,
+        "monetization_score": 90.6,
+        "mode_score": 73.5,
+        "search_intent": "COMMERCIAL",
+        "similarity_to_existing": 0.25,
+        "site_fit": 16,
+        "specificity": 18,
+        "experience_input": 0,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 1,
+        "risks": [
+          "직접 경험 연결 없음"
+        ],
+        "observed_keyword": "누수 · 결로 · 단열",
+        "source_title": "아직도 방수,단열,결로,누수로 고생하세요?이렇게 시공하세요/제대로 시공해야 문제가 안생깁니다-정건하우징",
+        "source_url": "https://www.youtube.com/watch?v=DR9qsxb6kfo",
+        "source": "YouTube",
+        "automation_score": 81.5
+      }
+    ],
     "selected_topic": null,
     "has_experience": null,
     "experience_id": null,
-    "status": null
+    "status": "TOP3_READY"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -181,6 +281,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.2.0",
-    "updated_at": "2026-10-05T20:43:10+09:00"
+    "updated_at": "2026-10-05T20:47:56+09:00"
   }
 }
