@@ -1,7 +1,7 @@
 {
-  "schema": "archiclimate-ai-bridge-state-v3",
-  "generated_at": "2026-10-05T20:30:28+09:00",
-  "engine_version": "V4.1.0",
+  "schema": "archiclimate-ai-bridge-state-v4",
+  "generated_at": "2026-10-05T20:42:20+09:00",
+  "engine_version": "V4.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "claim evidence search",
@@ -193,10 +193,20 @@
     ],
     "updated_at": "2026-10-05T20:30:22+09:00"
   },
+  "automation": {
+    "version": null,
+    "generated_at": null,
+    "mode": null,
+    "query": null,
+    "source_count": null,
+    "top3": null,
+    "selected_topic": null,
+    "has_experience": null,
+    "experience_id": null,
+    "status": null
+  },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
-    "official_checked": 6,
-    "official_pending": 0,
     "candidates": {
       "total": 46,
       "status": {
@@ -207,11 +217,6 @@
         "Naver Blog": 23,
         "YouTube": 16,
         "Google News": 7
-      },
-      "relevance_tier": {
-        "HIGH": 22,
-        "UNSET": 23,
-        "REVIEW": 1
       },
       "learning_policy": {
         "CONTEXT_ONLY": 7,
@@ -227,18 +232,6 @@
         "AUTOMATION_GUIDE": 1,
         "COURSE_REVIEW_REPUTATION": 2,
         "NEWS_REPORT": 7
-      },
-      "first_triage": {
-        "CONTEXT_ONLY": 7,
-        "HUMAN_REVIEW": 33,
-        "KEEP_RECOMMENDED": 6
-      },
-      "second_triage": {
-        "UNSET": 14,
-        "EXPERIENCE_REVIEW": 3,
-        "CLAIM_REVIEW": 20,
-        "STRONG_REJECT_RECOMMENDED": 5,
-        "CONTEXT_ONLY_2": 4
       }
     },
     "claims": {
@@ -249,11 +242,6 @@
       "REJECTED": 0,
       "auto_proposed": 12
     }
-  },
-  "knowledge_base": {
-    "rules": 39,
-    "sources": 17,
-    "manifest_sources": 17
   },
   "database": {
     "exists": true,
@@ -270,28 +258,27 @@
     "google_oauth_token_present": true,
     "github_bridge_configured": true
   },
+  "limitations": {
+    "local_ai_writer_requires_api_key": true,
+    "chatgpt_subscription_is_not_local_api_access": true,
+    "blogger_api_custom_permalink_not_guaranteed": true
+  },
   "safety": {
     "publishing_requires_user_approval": true,
-    "claims_require_human_verification": true,
     "experience_fabrication_blocked": true,
     "secrets_exposed": false,
     "article_bodies_exposed": false,
-    "screen_capture_enabled": false,
-    "public_state_contains_paths": false
+    "screen_capture_enabled": false
   },
   "bridge_capabilities": {
-    "live_screen_pixels": false,
-    "current_page": true,
     "actual_visible_controls": true,
-    "recommended_control": true,
-    "selection_summary": true,
-    "operational_counters": true,
+    "automation_summary": true,
     "workflow_summary": true,
     "errors_and_last_action": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
-    "version": "V4.1.0",
-    "updated_at": "2026-10-05T20:30:28+09:00"
+    "version": "V4.2.0",
+    "updated_at": "2026-10-05T20:42:20+09:00"
   }
 }
