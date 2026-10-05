@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v2",
-  "generated_at": "2026-10-05T19:57:17+09:00",
+  "generated_at": "2026-10-05T19:57:49+09:00",
   "engine_version": "V4.0.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "candidate second triage",
+    "last_action": "safe second triage apply",
     "result": "OK",
-    "detail": "{'checked': 32, 'CLAIM_REVIEW': 20, 'EXPERIENCE_REVIEW': 3, 'CONTEXT_ONLY_2': 4, 'STRONG_REJECT_RECOMMENDED': 5, 'MANUAL_REVIEW': 0, 'at': '2026-10-05T19:57:11+09:00', 'version': '1.0'}",
-    "updated_at": "2026-10-05T19:57:11+09:00"
+    "detail": "{'changed': 27, 'claim_review_kept': 20, 'experience_review_kept': 3, 'context_only_kept': 4, 'strong_reject_untouched': 5, 'manual_review_untouched': 0}",
+    "updated_at": "2026-10-05T19:57:40+09:00"
   },
   "ui": {
     "current_page": "검토",
@@ -24,26 +24,27 @@
       "주장 VERIFIED/CONTESTED/REJECTED 검토"
     ],
     "selection": {
-      "candidate_title": "구글 애드센스 수익화 방법｜승인부터 광고수익 만드는 방법까지",
+      "candidate_title": "네이버 블로그 애드포스트 수익 월 10만원 달성, 직접 해보니 달라진....",
       "candidate_status": "NEW",
       "source": "Naver Blog",
       "learning_policy": "REVIEW_BEFORE_USE",
       "triage_recommendation": "HUMAN_REVIEW",
       "triage_flags": [
-        "MIXED_ADSENSE_ADPOST",
+        "NUMERIC_OR_INCOME_CLAIM",
+        "FIRSTHAND_SIGNAL_NEEDS_SOURCE_CHECK",
         "NON_PRIMARY_SOURCE"
       ],
-      "second_triage_recommendation": "CLAIM_REVIEW",
-      "second_triage_reason": "가이드/강의 자료: 주장 후보를 추출해 별도 검증할 가치가 있음"
+      "second_triage_recommendation": "STRONG_REJECT_RECOMMENDED",
+      "second_triage_reason": "검증 어려운 수치/수익 주장 + 비1차 출처"
     },
     "notice": "",
     "counters": {
       "candidate_total": 46,
-      "candidate_new": 32,
+      "candidate_new": 5,
       "claims_proposed": 0,
       "claims_verified": 0
     },
-    "updated_at": "2026-10-05T19:57:11+09:00"
+    "updated_at": "2026-10-05T19:57:40+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -52,9 +53,9 @@
     "candidates": {
       "total": 46,
       "status": {
-        "KEEP": 13,
-        "NEW": 32,
-        "REJECT": 1
+        "KEEP": 40,
+        "REJECT": 1,
+        "NEW": 5
       },
       "source": {
         "Naver Blog": 23,
@@ -127,6 +128,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.0.0",
-    "updated_at": "2026-10-05T19:57:17+09:00"
+    "updated_at": "2026-10-05T19:57:49+09:00"
   }
 }
