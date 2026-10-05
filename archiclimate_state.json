@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T20:42:20+09:00",
+  "generated_at": "2026-10-05T20:42:37+09:00",
   "engine_version": "V4.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,188 +10,90 @@
     "updated_at": "2026-10-05T20:30:22+09:00"
   },
   "ui": {
-    "current_page": "검토",
-    "page_title": "⑫ 후보·주장 검토",
+    "current_page": "자동화",
+    "page_title": "① 블로그 자동화",
     "controls": [
       {
-        "id": "run_candidate_pipeline",
-        "label": "후보 검토 자동화 실행",
+        "id": "run_daily_content",
+        "label": "오늘의 콘텐츠 자동 분석 시작",
         "kind": "button",
-        "section": "후보 자동화",
-        "visible": true,
-        "enabled": false,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "bulk_strong_reject",
-        "label": "강한 제외추천 일괄 REJECT",
-        "kind": "button",
-        "section": "후보 자동화",
-        "visible": true,
-        "enabled": false,
-        "danger": true,
-        "description": ""
-      },
-      {
-        "id": "generate_claim_proposals",
-        "label": "KEEP 자료 → 주장 검증 큐 자동 구축",
-        "kind": "button",
-        "section": "주장 자동화",
+        "section": "자동분석",
         "visible": true,
         "enabled": true,
         "danger": false,
-        "description": ""
-      },
-      {
-        "id": "prepare_claim_review",
-        "label": "PROPOSED 주장 자동 위험·근거 분석",
-        "kind": "button",
-        "section": "주장 자동화",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "claim_evidence_search",
-        "label": "이 주장 관련 내부 근거 찾기",
-        "kind": "button",
-        "section": "주장검증",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "claim_verified",
-        "label": "VERIFIED — 글쓰기 근거로 사용",
-        "kind": "button",
-        "section": "주장검증",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "claim_contested",
-        "label": "CONTESTED — 충돌 보존",
-        "kind": "button",
-        "section": "주장검증",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "claim_rejected",
-        "label": "REJECTED — 사용 금지",
-        "kind": "button",
-        "section": "주장검증",
-        "visible": true,
-        "enabled": true,
-        "danger": true,
         "description": ""
       }
     ],
     "available_actions": [
-      "KEEP 자료 → 주장 검증 큐 자동 구축",
-      "PROPOSED 주장 자동 위험·근거 분석",
-      "이 주장 관련 내부 근거 찾기",
-      "VERIFIED — 글쓰기 근거로 사용",
-      "CONTESTED — 충돌 보존",
-      "REJECTED — 사용 금지"
+      "오늘의 콘텐츠 자동 분석 시작"
     ],
-    "recommended_control_id": null,
+    "recommended_control_id": "run_daily_content",
     "selection": {
-      "candidate_title": "구글 애드센스 수익화 방법｜승인부터 광고수익 만드는 방법까지",
-      "candidate_status": "KEEP",
-      "source": "Naver Blog",
-      "learning_policy": "REVIEW_BEFORE_USE",
       "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {
-      "candidate_total": 46,
-      "candidate_new": 0,
-      "claims_proposed": 12,
-      "claims_verified": 0
+      "top3": 0,
+      "selected": 0,
+      "drafts": 0
     },
     "workflow": [
       {
-        "stage": "SOURCE",
-        "title": "자료 수집·분류",
-        "status": "DONE",
-        "detail": "후보 46개",
-        "page": "업데이트",
-        "control_id": "scan_latest",
-        "control_label": "최신자료 전체 스캔"
+        "stage": "ANALYZE",
+        "title": "오늘의 콘텐츠 자동 분석",
+        "status": "ACTION",
+        "detail": "검색·중복·사이트 적합성·승인/수익 점수를 한 번에 분석",
+        "page": "자동화",
+        "control_id": "run_daily_content",
+        "control_label": "오늘의 콘텐츠 자동 분석 시작"
       },
       {
-        "stage": "CANDIDATE",
-        "title": "후보 자동검토",
-        "status": "DONE",
-        "detail": "KEEP 40개 / 미검토 0",
-        "page": "검토",
+        "stage": "TOPIC",
+        "title": "TOP3 선택",
+        "status": "WAIT",
+        "detail": "분석 결과 TOP3 중 하나 선택",
+        "page": "자동화",
+        "control_id": "select_top3",
+        "control_label": "TOP3 중 선택"
+      },
+      {
+        "stage": "EXPERIENCE",
+        "title": "실제 경험 확인",
+        "status": "WAIT",
+        "detail": "주제 선택 후 필요한 경우만 확인",
+        "page": "자동화",
         "control_id": null,
         "control_label": null
       },
       {
-        "stage": "CLAIM",
-        "title": "주장 검증",
-        "status": "ACTION",
-        "detail": "PROPOSED 12개 자동 위험·근거 분석 후 사람 검증",
-        "page": "검토",
-        "control_id": "prepare_claim_review",
-        "control_label": "PROPOSED 주장 자동 위험·근거 분석"
-      },
-      {
-        "stage": "EXPERIENCE",
-        "title": "경험 DB",
-        "status": "ACTION",
-        "detail": "승인 모드는 실제 경험 연결을 우선 권장",
-        "page": "경험",
-        "control_id": "add_experience",
-        "control_label": "실제 경험 등록"
-      },
-      {
-        "stage": "TOPIC",
-        "title": "TOP3 선정",
-        "status": "WAIT",
-        "detail": "검증 주장 또는 경험 확보 후 권장",
-        "page": "주제",
-        "control_id": "score_top3",
-        "control_label": "주제 점수 계산 · TOP3 선정"
-      },
-      {
         "stage": "DRAFT",
-        "title": "초안·QC",
+        "title": "글 자동 제작",
         "status": "WAIT",
-        "detail": "TOP3에서 초안 생성 후 하드 QC",
-        "page": "초안",
-        "control_id": "generate_draft",
-        "control_label": "초안 생성"
+        "detail": "주제/경험 확인 후 실행",
+        "page": "자동화",
+        "control_id": "generate_article",
+        "control_label": "글 자동 제작"
       },
       {
         "stage": "APPROVAL",
-        "title": "사용자 승인",
+        "title": "최종 확인·발행",
         "status": "WAIT",
-        "detail": "발행 0개 / 승인 0개",
-        "page": "승인",
-        "control_id": "review_draft",
-        "control_label": "초안 검토·승인"
+        "detail": "사용자 확인 전 자동 게시 금지",
+        "page": "발행",
+        "control_id": "publish_draft",
+        "control_label": "최종 승인 후 Blogger 발행"
       },
       {
         "stage": "FEEDBACK",
-        "title": "GSC 피드백",
+        "title": "성과 피드백",
         "status": "WAIT",
-        "detail": "D+1/D+3/D+7/D+28 성과 피드백",
-        "page": "연결",
+        "detail": "GSC 데이터를 다음 추천에 반영",
+        "page": "성과",
         "control_id": "gsc_28d",
-        "control_label": "GSC 최근 28일 페이지 실적"
+        "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T20:30:22+09:00"
+    "updated_at": "2026-10-05T20:42:24+09:00"
   },
   "automation": {
     "version": null,
@@ -279,6 +181,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.2.0",
-    "updated_at": "2026-10-05T20:42:20+09:00"
+    "updated_at": "2026-10-05T20:42:37+09:00"
   }
 }
