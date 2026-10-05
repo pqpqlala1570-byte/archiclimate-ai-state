@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T22:15:06+09:00",
+  "generated_at": "2026-10-05T22:16:08+09:00",
   "engine_version": "V4.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "Gemini API key saved",
+    "last_action": "article automation generated",
     "result": "OK",
-    "detail": "local .env updated; secret not exposed",
-    "updated_at": "2026-10-05T22:14:58+09:00"
+    "detail": "draft_id=1",
+    "updated_at": "2026-10-05T22:15:56+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -71,7 +71,7 @@
       "3번 주제로 선택",
       "글 자동 제작"
     ],
-    "recommended_control_id": "generate_article",
+    "recommended_control_id": "publish_draft",
     "selection": {
       "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
       "mode": "APPROVAL MODE"
@@ -80,7 +80,7 @@
     "counters": {
       "top3": 3,
       "selected": 1,
-      "drafts": 0
+      "drafts": 1
     },
     "workflow": [
       {
@@ -113,7 +113,7 @@
       {
         "stage": "DRAFT",
         "title": "글 자동 제작",
-        "status": "ACTION",
+        "status": "DONE",
         "detail": "본문·SEO 패키지·QC를 자동 생성",
         "page": "자동화",
         "control_id": "generate_article",
@@ -122,7 +122,7 @@
       {
         "stage": "APPROVAL",
         "title": "최종 확인·발행",
-        "status": "WAIT",
+        "status": "ACTION",
         "detail": "사용자 확인 전 자동 게시 금지",
         "page": "발행",
         "control_id": "publish_draft",
@@ -138,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T22:14:58+09:00"
+    "updated_at": "2026-10-05T22:15:57+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -336,7 +336,7 @@
   },
   "database": {
     "exists": true,
-    "drafts": 0,
+    "drafts": 1,
     "experiences": 0,
     "published": 0,
     "approved": 0,
@@ -371,6 +371,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.1",
-    "updated_at": "2026-10-05T22:15:06+09:00"
+    "updated_at": "2026-10-05T22:16:08+09:00"
   }
 }
