@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T20:56:13+09:00",
+  "generated_at": "2026-10-05T20:57:34+09:00",
   "engine_version": "V4.2.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "daily content automation",
     "result": "OK",
-    "detail": "sources=19 top3=3 mode=APPROVAL MODE",
-    "updated_at": "2026-10-05T20:47:53+09:00"
+    "detail": "sources=20 top3=3 mode=APPROVAL MODE",
+    "updated_at": "2026-10-05T20:57:18+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -126,20 +126,163 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T20:47:53+09:00"
+    "updated_at": "2026-10-05T20:57:19+09:00"
   },
   "automation": {
-    "version": null,
-    "generated_at": null,
-    "mode": null,
-    "query": null,
-    "source_count": null,
-    "topic_cluster_count": null,
-    "top3": null,
+    "version": "V4.2.1",
+    "generated_at": "2026-10-05T20:57:18+09:00",
+    "mode": "APPROVAL MODE",
+    "query": "누수 결로 곰팡이 단열 환기 방수 배수 건축 하자",
+    "source_count": 20,
+    "topic_cluster_count": 8,
+    "top3": [
+      {
+        "topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
+        "approval_score": 81.1,
+        "monetization_score": 72.9,
+        "mode_score": 81.1,
+        "search_intent": "HOW_TO",
+        "similarity_to_existing": 0.42,
+        "site_fit": 12,
+        "specificity": 14.3,
+        "experience_input": 2,
+        "evidence_count": 4,
+        "verified_claims": 0,
+        "source_quality": 3,
+        "risks": [],
+        "concept_key": "누수|결로",
+        "support_count": 7,
+        "channel_count": 2,
+        "channels": {
+          "YouTube": 2,
+          "Naver Blog": 5
+        },
+        "observed_keyword": "누수 · 결로 · 곰팡이 · 배수",
+        "supporting_sources": [
+          {
+            "source": "YouTube",
+            "title": "비싼 것도 다 소용없었어요 인테리어 했는데 결로 곰팡이가 생기는 이유 ⎮ 단열 방풍 누수에 진심인 전문가가 말하는 창호 시공 방법 기초공사가 중요합니다",
+            "url": "https://www.youtube.com/watch?v=Hi4o1ortO50"
+          },
+          {
+            "source": "YouTube",
+            "title": "누수와 결로.. 어디선가 냄새가 난다... 심각한 곰팜이 균들",
+            "url": "https://www.youtube.com/watch?v=w_Q9UwfNmlc"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "강남구 누수 원인부터 점검 흐름까지, 초기에 놓치기 쉬운 포인트 ....",
+            "url": "https://blog.naver.com/n6783111/224432219209"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "발코니전용창 천호동, 작은 창 하나까지 틈과 바람을 함께 막는 방....",
+            "url": "https://blog.naver.com/korgget222/224431589911"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "평택 고덕신도시 신안인스빌시그니처 누수도배 아랫집누수피해복....",
+            "url": "https://blog.naver.com/ab9292we/224432089406"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "창문 결로 생기는 이유와 예방법｜곰팡이 생기기 전 환기·습도 관....",
+            "url": "https://blog.naver.com/yjgood26720/224431916954"
+          }
+        ],
+        "source_copy_similarity": 0.26,
+        "automation_score": 95.6,
+        "why_recommended": "관련 자료 7건·채널 2개 / 기존 글 유사도 0.42 / HOW_TO 의도"
+      },
+      {
+        "topic": "누수, 방수공사 전에 원인부터 확인하는 점검 순서",
+        "approval_score": 77.1,
+        "monetization_score": 80.0,
+        "mode_score": 77.1,
+        "search_intent": "HOW_TO",
+        "similarity_to_existing": 0.36,
+        "site_fit": 8,
+        "specificity": 18,
+        "experience_input": 2,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 2,
+        "risks": [],
+        "concept_key": "누수|방수",
+        "support_count": 3,
+        "channel_count": 1,
+        "channels": {
+          "Naver Blog": 3
+        },
+        "observed_keyword": "누수 · 방수 · 배수 · 곰팡이",
+        "supporting_sources": [
+          {
+            "source": "Naver Blog",
+            "title": "변기막힘 뚫는법 셀프 시도 실패 후 전문 변기뚫는업체 불러 관통기....",
+            "url": "https://blog.naver.com/gfhnnnnn/224432217779"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "김해 현대4차 아파트 베란다 천장 누수 원인 해결과 피해 세대 탄성....",
+            "url": "https://blog.naver.com/greenhome_1004/224432127916"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "\"주말마다 시골로 갑니다\", 낡은 15평 시골집 샀더니 이렇게 달라졌....",
+            "url": "https://blog.naver.com/esther_416/224432010995"
+          }
+        ],
+        "source_copy_similarity": 0.24,
+        "automation_score": 85.6,
+        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.36 / HOW_TO 의도"
+      },
+      {
+        "topic": "곰팡이 문제를 잘못 판단하지 않기 위한 원인 확인 순서",
+        "approval_score": 68.9,
+        "monetization_score": 64.8,
+        "mode_score": 68.9,
+        "search_intent": "HOW_TO",
+        "similarity_to_existing": 0.41,
+        "site_fit": 4,
+        "specificity": 15.0,
+        "experience_input": 2,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 2,
+        "risks": [],
+        "concept_key": "곰팡이",
+        "support_count": 3,
+        "channel_count": 1,
+        "channels": {
+          "YouTube": 3
+        },
+        "observed_keyword": "곰팡이",
+        "supporting_sources": [
+          {
+            "source": "YouTube",
+            "title": "당신의 집에 곰팡이가 생기는 3가지 이유",
+            "url": "https://www.youtube.com/watch?v=wM64BDJxEMs"
+          },
+          {
+            "source": "YouTube",
+            "title": "벽에 생긴 곰팡이 누가 도배하나요?",
+            "url": "https://www.youtube.com/watch?v=jgLAlpS7Di0"
+          },
+          {
+            "source": "YouTube",
+            "title": "곰팡이 가득한 집! 직접 고치기",
+            "url": "https://www.youtube.com/watch?v=XvS4HCCO98A"
+          }
+        ],
+        "source_copy_similarity": 0.34,
+        "automation_score": 77.4,
+        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.41 / HOW_TO 의도"
+      }
+    ],
     "selected_topic": null,
     "has_experience": null,
     "experience_id": null,
-    "status": null
+    "status": "TOP3_READY"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -215,6 +358,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.2.1",
-    "updated_at": "2026-10-05T20:56:13+09:00"
+    "updated_at": "2026-10-05T20:57:34+09:00"
   }
 }
