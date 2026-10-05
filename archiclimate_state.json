@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v3",
-  "generated_at": "2026-10-05T20:23:34+09:00",
+  "generated_at": "2026-10-05T20:28:06+09:00",
   "engine_version": "V4.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "strong reject bulk apply",
+    "last_action": "claim review queue build",
     "result": "OK",
-    "detail": "{'changed': 5}",
-    "updated_at": "2026-10-05T19:58:24+09:00"
+    "detail": "{'proposal': {'created': 12, 'skipped_context': 0, 'skipped_empty': 0, 'errors': {}}, 'screen': {'checked': 12, 'REJECT_RECOMMENDED': 3, 'VERIFY_AGAINST_OFFICIAL': 0, 'CROSS_SOURCE_REVIEW': 9, 'ORIGINAL_SOURCE_REVIEW': 0}}",
+    "updated_at": "2026-10-05T20:27:53+09:00"
   },
   "ui": {
     "current_page": "검토",
@@ -42,10 +42,65 @@
         "enabled": true,
         "danger": false,
         "description": ""
+      },
+      {
+        "id": "prepare_claim_review",
+        "label": "PROPOSED 주장 자동 위험·근거 분석",
+        "kind": "button",
+        "section": "주장 자동화",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "claim_evidence_search",
+        "label": "이 주장 관련 내부 근거 찾기",
+        "kind": "button",
+        "section": "주장검증",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "claim_verified",
+        "label": "VERIFIED — 글쓰기 근거로 사용",
+        "kind": "button",
+        "section": "주장검증",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "claim_contested",
+        "label": "CONTESTED — 충돌 보존",
+        "kind": "button",
+        "section": "주장검증",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "claim_rejected",
+        "label": "REJECTED — 사용 금지",
+        "kind": "button",
+        "section": "주장검증",
+        "visible": true,
+        "enabled": true,
+        "danger": true,
+        "description": ""
       }
     ],
     "available_actions": [
-      "KEEP 자료 → 주장 검증 큐 자동 구축"
+      "KEEP 자료 → 주장 검증 큐 자동 구축",
+      "PROPOSED 주장 자동 위험·근거 분석",
+      "이 주장 관련 내부 근거 찾기",
+      "VERIFIED — 글쓰기 근거로 사용",
+      "CONTESTED — 충돌 보존",
+      "REJECTED — 사용 금지"
     ],
     "recommended_control_id": null,
     "selection": {
@@ -59,7 +114,7 @@
     "counters": {
       "candidate_total": 46,
       "candidate_new": 0,
-      "claims_proposed": 0,
+      "claims_proposed": 12,
       "claims_verified": 0
     },
     "workflow": [
@@ -83,12 +138,12 @@
       },
       {
         "stage": "CLAIM",
-        "title": "주장 후보 생성",
+        "title": "주장 검증",
         "status": "ACTION",
-        "detail": "KEEP 40개에서 검증 후보 추출",
+        "detail": "PROPOSED 12개 자동 위험·근거 분석 후 사람 검증",
         "page": "검토",
-        "control_id": "generate_claim_proposals",
-        "control_label": "KEEP 자료 → 주장 검증 큐 자동 구축"
+        "control_id": "prepare_claim_review",
+        "control_label": "PROPOSED 주장 자동 위험·근거 분석"
       },
       {
         "stage": "EXPERIENCE",
@@ -136,7 +191,7 @@
         "control_label": "GSC 최근 28일 페이지 실적"
       }
     ],
-    "updated_at": "2026-10-05T20:23:33+09:00"
+    "updated_at": "2026-10-05T20:27:53+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -187,12 +242,12 @@
       }
     },
     "claims": {
-      "total": 0,
-      "PROPOSED": 0,
+      "total": 12,
+      "PROPOSED": 12,
       "VERIFIED": 0,
       "CONTESTED": 0,
       "REJECTED": 0,
-      "auto_proposed": 0
+      "auto_proposed": 12
     }
   },
   "knowledge_base": {
@@ -237,6 +292,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.1.0",
-    "updated_at": "2026-10-05T20:23:34+09:00"
+    "updated_at": "2026-10-05T20:28:06+09:00"
   }
 }
