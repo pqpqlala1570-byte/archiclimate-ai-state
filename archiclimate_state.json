@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T22:18:26+09:00",
+  "generated_at": "2026-10-05T22:18:42+09:00",
   "engine_version": "V4.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,21 +10,23 @@
     "updated_at": "2026-10-05T22:15:56+09:00"
   },
   "ui": {
-    "current_page": "발행",
-    "page_title": "③ 최종 승인·발행",
+    "current_page": "초안",
+    "page_title": "② 초안·QC",
     "controls": [
       {
-        "id": "publish_draft",
-        "label": "최종 승인 후 Blogger 발행",
+        "id": "save_draft_note",
+        "label": "수정 메모 저장",
         "kind": "button",
-        "section": "발행",
+        "section": "초안",
         "visible": true,
-        "enabled": false,
-        "danger": true,
+        "enabled": true,
+        "danger": false,
         "description": ""
       }
     ],
-    "available_actions": [],
+    "available_actions": [
+      "수정 메모 저장"
+    ],
     "recommended_control_id": null,
     "selection": {
       "draft_id": 1,
@@ -89,7 +91,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T22:18:22+09:00"
+    "updated_at": "2026-10-05T22:18:30+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -322,6 +324,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.1",
-    "updated_at": "2026-10-05T22:18:26+09:00"
+    "updated_at": "2026-10-05T22:18:42+09:00"
   }
 }
