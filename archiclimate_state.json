@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T22:14:34+09:00",
+  "generated_at": "2026-10-05T22:15:06+09:00",
   "engine_version": "V4.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "AI Bridge sync",
-    "result": "ERROR",
-    "detail": "RuntimeError",
-    "updated_at": "2026-10-05T22:03:27+09:00"
+    "last_action": "Gemini API key saved",
+    "result": "OK",
+    "detail": "local .env updated; secret not exposed",
+    "updated_at": "2026-10-05T22:14:58+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -54,18 +54,8 @@
         "description": ""
       },
       {
-        "id": "copy_chatgpt_request",
-        "label": "ChatGPT 글쓰기 요청 복사",
-        "kind": "button",
-        "section": "글작성",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "import_chatgpt_result",
-        "label": "ChatGPT 작성 결과 가져오기",
+        "id": "generate_article",
+        "label": "글 자동 제작",
         "kind": "button",
         "section": "글작성",
         "visible": true,
@@ -79,10 +69,9 @@
       "1번 주제로 선택",
       "2번 주제로 선택",
       "3번 주제로 선택",
-      "ChatGPT 글쓰기 요청 복사",
-      "ChatGPT 작성 결과 가져오기"
+      "글 자동 제작"
     ],
-    "recommended_control_id": "copy_chatgpt_request",
+    "recommended_control_id": "generate_article",
     "selection": {
       "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
       "mode": "APPROVAL MODE"
@@ -125,10 +114,10 @@
         "stage": "DRAFT",
         "title": "글 자동 제작",
         "status": "ACTION",
-        "detail": "ChatGPT handoff로 작성 후 결과 1회 가져오기",
+        "detail": "본문·SEO 패키지·QC를 자동 생성",
         "page": "자동화",
-        "control_id": "copy_chatgpt_request",
-        "control_label": "ChatGPT 글쓰기 요청 복사"
+        "control_id": "generate_article",
+        "control_label": "글 자동 제작"
       },
       {
         "stage": "APPROVAL",
@@ -149,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T22:14:22+09:00"
+    "updated_at": "2026-10-05T22:14:58+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -355,7 +344,7 @@
   },
   "connections": {
     "naver_credentials_present": true,
-    "gemini_key_present": false,
+    "gemini_key_present": true,
     "google_client_secret_present": true,
     "google_oauth_token_present": true,
     "github_bridge_configured": true
@@ -382,6 +371,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.1",
-    "updated_at": "2026-10-05T22:14:34+09:00"
+    "updated_at": "2026-10-05T22:15:06+09:00"
   }
 }
