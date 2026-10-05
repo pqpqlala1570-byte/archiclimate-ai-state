@@ -1,13 +1,28 @@
 {
-  "schema": "archiclimate-ai-bridge-state-v1",
-  "generated_at": "2026-10-05T17:46:00+09:00",
-  "engine_version": "V3.3.2",
-  "privacy": "sanitized_aggregate_only",
+  "schema": "archiclimate-ai-bridge-state-v2",
+  "generated_at": "2026-10-05T18:34:44+09:00",
+  "engine_version": "V4.0.0",
+  "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "AI Bridge GitHub setup",
     "result": "OK",
     "detail": "sanitized public state file created",
     "updated_at": "2026-10-05T17:44:16+09:00"
+  },
+  "ui": {
+    "current_page": "센터",
+    "page_title": "① 작업센터",
+    "available_actions": [
+      "시스템 상태 확인",
+      "권장 다음 작업 확인",
+      "진단 ZIP 만들기"
+    ],
+    "selection": {
+      "mode": "APPROVAL MODE"
+    },
+    "notice": "화면 캡처 없이 현재 메뉴와 가능한 작업을 AI Bridge에 공유",
+    "counters": {},
+    "updated_at": "2026-10-05T18:31:54+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -43,6 +58,13 @@
         "COURSE_REVIEW_REPUTATION": 2,
         "NEWS_REPORT": 7
       }
+    },
+    "claims": {
+      "total": 0,
+      "PROPOSED": 0,
+      "VERIFIED": 0,
+      "CONTESTED": 0,
+      "REJECTED": 0
     }
   },
   "knowledge_base": {
@@ -54,23 +76,34 @@
     "exists": true,
     "drafts": 0,
     "experiences": 0,
-    "published": 0
+    "published": 0,
+    "approved": 0
   },
   "connections": {
     "naver_credentials_present": true,
     "gemini_key_present": false,
     "google_client_secret_present": true,
-    "google_oauth_token_present": true
+    "google_oauth_token_present": true,
+    "github_bridge_configured": true
   },
   "safety": {
     "publishing_requires_user_approval": true,
     "secrets_exposed": false,
     "article_bodies_exposed": false,
-    "screen_capture_enabled": false
+    "screen_capture_enabled": false,
+    "public_state_contains_paths": false
+  },
+  "bridge_capabilities": {
+    "live_screen_pixels": false,
+    "current_page": true,
+    "available_actions": true,
+    "selection_summary": true,
+    "operational_counters": true,
+    "errors_and_last_action": true
   },
   "bridge": {
-    "transport": "github-public-sanitized-state",
-    "version": "V3.3.2",
-    "updated_at": "2026-10-05T17:46:00+09:00"
+    "transport": "github-sanitized-state",
+    "version": "V4.0.0",
+    "updated_at": "2026-10-05T18:34:44+09:00"
   }
 }
