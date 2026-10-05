@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-05T22:00:39+09:00",
+  "generated_at": "2026-10-05T22:04:27+09:00",
   "engine_version": "V4.3.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "experience auto match",
-    "result": "OK",
-    "detail": "no verified match; continue without fabricated experience",
-    "updated_at": "2026-10-05T21:59:38+09:00"
+    "last_action": "AI Bridge sync",
+    "result": "ERROR",
+    "detail": "RuntimeError",
+    "updated_at": "2026-10-05T22:03:27+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -138,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-05T22:00:29+09:00"
+    "updated_at": "2026-10-05T22:03:18+09:00"
   },
   "automation": {
     "version": "V4.2.1",
@@ -371,6 +371,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.3.0",
-    "updated_at": "2026-10-05T22:00:39+09:00"
+    "updated_at": "2026-10-05T22:04:27+09:00"
   }
 }
