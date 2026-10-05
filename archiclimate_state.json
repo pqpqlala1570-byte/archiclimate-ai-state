@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v2",
-  "generated_at": "2026-10-05T19:05:26+09:00",
+  "generated_at": "2026-10-05T19:05:43+09:00",
   "engine_version": "V4.0.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,27 +10,19 @@
     "updated_at": "2026-10-05T17:44:16+09:00"
   },
   "ui": {
-    "current_page": "검토",
-    "page_title": "⑫ 후보·주장 검토",
+    "current_page": "센터",
+    "page_title": "① 작업센터",
     "available_actions": [
-      "후보 KEEP/REJECT",
-      "주장 PROPOSED 등록",
-      "주장 VERIFIED/CONTESTED/REJECTED 검토"
+      "시스템 상태 확인",
+      "권장 다음 작업 확인",
+      "진단 ZIP 만들기"
     ],
     "selection": {
-      "candidate_title": "구글 블로그로 돈 버는 방법: 블로거(Blogger)와 애드센스로 시작하는 ....",
-      "candidate_status": "NEW",
-      "source": "Naver Blog",
-      "learning_policy": "REVIEW_BEFORE_USE"
+      "mode": "APPROVAL MODE"
     },
-    "notice": "",
-    "counters": {
-      "candidate_total": 46,
-      "candidate_new": 46,
-      "claims_proposed": 0,
-      "claims_verified": 0
-    },
-    "updated_at": "2026-10-05T18:38:59+09:00"
+    "notice": "화면 캡처 없이 현재 메뉴와 가능한 작업을 AI Bridge에 공유",
+    "counters": {},
+    "updated_at": "2026-10-05T19:05:29+09:00"
   },
   "knowledge": {
     "last_scan": "2026-10-05T16:01:30+09:00",
@@ -112,6 +104,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V4.0.0",
-    "updated_at": "2026-10-05T19:05:26+09:00"
+    "updated_at": "2026-10-05T19:05:43+09:00"
   }
 }
