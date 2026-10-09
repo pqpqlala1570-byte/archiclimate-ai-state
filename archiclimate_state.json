@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T18:07:47+09:00",
-  "engine_version": "V5.1.7",
+  "generated_at": "2026-10-09T18:22:28+09:00",
+  "engine_version": "V5.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "daily content automation",
@@ -540,11 +540,14 @@
     "multiaxis_topic_learning": true,
     "pair_performance_learning": true,
     "recency_decay": true,
-    "topic_saturation_penalty": true
+    "topic_saturation_penalty": true,
+    "professional_ui_v2": true,
+    "source_audit_view": true,
+    "full_source_manifest": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T18:07:47+09:00"
+    "updated_at": "2026-10-09T18:22:28+09:00"
   }
 }
