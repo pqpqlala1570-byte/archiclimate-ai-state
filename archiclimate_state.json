@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:10:55+09:00",
+  "generated_at": "2026-10-09T17:11:12+09:00",
   "engine_version": "V5.1.4",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "GSC 28d performance",
     "result": "OK",
-    "detail": "rows=21 persisted=yes",
-    "updated_at": "2026-10-09T16:32:47+09:00"
+    "detail": "rows=21 persisted=yes matched=0 eligible=0 feedback=INSUFFICIENT_DATA",
+    "updated_at": "2026-10-09T17:11:03+09:00"
   },
   "ui": {
     "current_page": "성과",
@@ -89,7 +89,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T17:10:49+09:00"
+    "updated_at": "2026-10-09T17:11:03+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -357,7 +357,7 @@
     "verified_experiences": 0,
     "draft_versions": 2,
     "publish_checks": 1,
-    "gsc_snapshots": 1
+    "gsc_snapshots": 2
   },
   "learning": {
     "sources": 23,
@@ -368,14 +368,14 @@
   },
   "performance_feedback": {
     "version": "gsc-feedback-v1",
-    "updated_at": null,
-    "captured_at": null,
+    "updated_at": "2026-10-09T17:11:03+09:00",
+    "captured_at": "2026-10-09T17:11:03+09:00",
     "status": "INSUFFICIENT_DATA",
     "confidence": "INSUFFICIENT",
-    "gsc_rows": null,
+    "gsc_rows": 21,
     "matched_posts": 0,
     "eligible_posts": 0,
-    "min_impressions": null,
+    "min_impressions": 20,
     "min_eligible_posts": 2
   },
   "connections": {
@@ -415,6 +415,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:10:55+09:00"
+    "updated_at": "2026-10-09T17:11:12+09:00"
   }
 }
