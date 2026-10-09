@@ -1,36 +1,34 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T16:32:36+09:00",
+  "generated_at": "2026-10-09T16:32:53+09:00",
   "engine_version": "V5.1.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "Blogger publish",
+    "last_action": "GSC 28d performance",
     "result": "OK",
-    "detail": "draft_id=2 live_check=True http=200 backup=app-before-publish-20261009-161147.db",
-    "updated_at": "2026-10-09T16:11:54+09:00"
+    "detail": "rows=21 persisted=yes",
+    "updated_at": "2026-10-09T16:32:47+09:00"
   },
   "ui": {
-    "current_page": "발행",
-    "page_title": "③ 최종 승인·발행",
+    "current_page": "성과",
+    "page_title": "④ Search Console 성과",
     "controls": [
       {
-        "id": "publish_draft",
-        "label": "최종 승인 후 Blogger 발행",
+        "id": "gsc_28d",
+        "label": "GSC 최근 28일 성과 불러오기",
         "kind": "button",
-        "section": "발행",
+        "section": "성과",
         "visible": true,
-        "enabled": false,
-        "danger": true,
+        "enabled": true,
+        "danger": false,
         "description": ""
       }
     ],
-    "available_actions": [],
+    "available_actions": [
+      "GSC 최근 28일 성과 불러오기"
+    ],
     "recommended_control_id": null,
     "selection": {
-      "draft_id": 2,
-      "status": "PUBLISHED",
-      "qc_gate": "BLOCK",
-      "qc_score": 69,
       "mode": "APPROVAL MODE"
     },
     "notice": "",
@@ -91,7 +89,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T16:32:35+09:00"
+    "updated_at": "2026-10-09T16:32:47+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -365,7 +363,7 @@
     "verified_experiences": 0,
     "draft_versions": 2,
     "publish_checks": 1,
-    "gsc_snapshots": 0
+    "gsc_snapshots": 1
   },
   "learning": {
     "sources": 23,
@@ -410,6 +408,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T16:32:36+09:00"
+    "updated_at": "2026-10-09T16:32:53+09:00"
   }
 }
