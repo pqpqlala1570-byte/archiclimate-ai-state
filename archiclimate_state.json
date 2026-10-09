@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T15:58:04+09:00",
+  "generated_at": "2026-10-09T15:59:21+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -380,7 +380,7 @@
     "published": 0,
     "approved": 0,
     "verified_experiences": 0,
-    "draft_versions": 1,
+    "draft_versions": 2,
     "publish_checks": 0,
     "gsc_snapshots": 0
   },
@@ -427,6 +427,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T15:58:04+09:00"
+    "updated_at": "2026-10-09T15:59:21+09:00"
   }
 }
