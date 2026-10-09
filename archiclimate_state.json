@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T21:12:40+09:00",
+  "generated_at": "2026-10-09T21:12:56+09:00",
   "engine_version": "V5.4.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -14,78 +14,46 @@
     "page_title": "② 작성·발행 · 검토",
     "controls": [
       {
-        "id": "generate_ai_image",
-        "label": "AI 대표 이미지 생성",
+        "id": "quick_prepare",
+        "label": "1. 자동 준비",
         "kind": "button",
-        "section": "대표 이미지",
+        "section": "빠른 작업",
         "visible": true,
         "enabled": true,
         "danger": false,
-        "description": ""
+        "description": "현재 글을 점검하고 필요한 이미지/정리 작업을 준비"
       },
       {
-        "id": "apply_ai_image",
-        "label": "AI 대표 이미지 적용",
+        "id": "quick_apply",
+        "label": "2. 검토 내용 반영",
         "kind": "button",
-        "section": "대표 이미지",
+        "section": "빠른 작업",
         "visible": true,
         "enabled": false,
         "danger": false,
-        "description": ""
-      },
-      {
-        "id": "ai_polish_draft",
-        "label": "AI 자동 다듬기 + QC 재검사",
-        "kind": "button",
-        "section": "초안",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "save_draft_edit",
-        "label": "수정본 저장 + QC 재검사",
-        "kind": "button",
-        "section": "고급 수동 편집",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "save_draft_note",
-        "label": "검토 메모 저장",
-        "kind": "button",
-        "section": "초안",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
+        "description": "미리보기 확인 후 준비된 변경사항을 한 번에 반영"
       }
     ],
     "available_actions": [
-      "AI 대표 이미지 생성",
-      "AI 자동 다듬기 + QC 재검사",
-      "수정본 저장 + QC 재검사",
-      "검토 메모 저장"
+      "1. 자동 준비"
     ],
-    "recommended_control_id": null,
+    "recommended_control_id": "quick_prepare",
     "selection": {
       "draft_id": 2,
       "status": "PUBLISHED",
       "qc_gate": "PASS",
       "qc_score": 100,
       "mode": "APPROVAL MODE",
-      "ai_image_ready": false,
+      "quick_workflow": true,
+      "quick_ready": false,
+      "image_count": 1,
+      "advanced_tools_collapsed": true,
       "editable_fields": [
         "title",
         "search_description",
         "permalink",
         "body_html"
-      ],
-      "preferred_edit_mode": "AI_EDITORIAL_POLISH",
-      "html_manual_edit_is_advanced": true
+      ]
     },
     "notice": "",
     "counters": {},
@@ -145,7 +113,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T21:04:12+09:00"
+    "updated_at": "2026-10-09T21:12:47+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -607,6 +575,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T21:12:40+09:00"
+    "updated_at": "2026-10-09T21:12:56+09:00"
   }
 }
