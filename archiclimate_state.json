@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T19:54:44+09:00",
+  "generated_at": "2026-10-09T19:56:15+09:00",
   "engine_version": "V5.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "published readability synced",
+    "last_action": "image candidates searched",
     "result": "OK",
-    "detail": "draft_id=2 url=https://www.archiclimate.com/2026/10/blog-post.html",
-    "updated_at": "2026-10-09T19:54:36+09:00"
+    "detail": "draft_id=2 provider=Wikimedia Commons candidates=8 queries=['water damage wall leak condensation wall window', 'water damage wall leak', 'condensation wall window', 'mold wall']",
+    "updated_at": "2026-10-09T19:56:04+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -29,7 +29,7 @@
         "kind": "button",
         "section": "대표 이미지",
         "visible": true,
-        "enabled": false,
+        "enabled": true,
         "danger": false,
         "description": ""
       },
@@ -66,6 +66,7 @@
     ],
     "available_actions": [
       "저작권 안전 이미지 찾기",
+      "대표 이미지 적용",
       "AI 자동 다듬기 + QC 재검사",
       "수정본 저장 + QC 재검사",
       "검토 메모 저장"
@@ -77,7 +78,7 @@
       "qc_gate": "PASS",
       "qc_score": 98,
       "mode": "APPROVAL MODE",
-      "image_candidates": 0,
+      "image_candidates": 8,
       "editable_fields": [
         "title",
         "search_description",
@@ -145,7 +146,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T19:54:39+09:00"
+    "updated_at": "2026-10-09T19:56:04+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -601,6 +602,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T19:54:44+09:00"
+    "updated_at": "2026-10-09T19:56:15+09:00"
   }
 }
