@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T16:11:57+09:00",
-  "engine_version": "V5.1.0",
+  "generated_at": "2026-10-09T16:31:19+09:00",
+  "engine_version": "V5.1.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "Blogger publish",
@@ -239,6 +239,7 @@
     "title": "누수 곰팡이와 결로 곰팡이, 흔적 차이와 구별 단서",
     "search_description": "벽지에 번진 곰팡이가 배관 누수인지 단열·환기 결로인지 얼룩 형태, 경계면, 발생 위치와 생활 점검을 통해 원인 가능성을 좁히는 기준을 정리했습니다.",
     "permalink": "leak-vs-condensation-mold-differences",
+    "published_url": "https://www.archiclimate.com/2026/10/blog-post.html",
     "provider": "gemini-3.8-flash",
     "source_count": 2,
     "qc": {
@@ -405,6 +406,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T16:11:57+09:00"
+    "updated_at": "2026-10-09T16:31:19+09:00"
   }
 }
