@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:00:49+09:00",
-  "engine_version": "V5.1.3",
+  "generated_at": "2026-10-09T17:10:22+09:00",
+  "engine_version": "V5.1.4",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "GSC 28d performance",
@@ -400,6 +400,18 @@
     "active_rules": 37,
     "claims": 7
   },
+  "performance_feedback": {
+    "version": "gsc-feedback-v1",
+    "updated_at": null,
+    "captured_at": null,
+    "status": "INSUFFICIENT_DATA",
+    "confidence": "INSUFFICIENT",
+    "gsc_rows": null,
+    "matched_posts": 0,
+    "eligible_posts": 0,
+    "min_impressions": null,
+    "min_eligible_posts": 2
+  },
   "connections": {
     "naver_credentials_present": true,
     "gemini_key_present": true,
@@ -431,11 +443,12 @@
     "post_publish_verification_summary": true,
     "learning_summary": true,
     "grounding_summary": true,
-    "evidence_coverage_summary": true
+    "evidence_coverage_summary": true,
+    "gsc_feedback_summary": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:00:49+09:00"
+    "updated_at": "2026-10-09T17:10:22+09:00"
   }
 }
