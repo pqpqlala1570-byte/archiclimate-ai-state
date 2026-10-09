@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T16:31:35+09:00",
+  "generated_at": "2026-10-09T16:32:36+09:00",
   "engine_version": "V5.1.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,78 +10,31 @@
     "updated_at": "2026-10-09T16:11:54+09:00"
   },
   "ui": {
-    "current_page": "자동화",
-    "page_title": "① 블로그 자동화",
+    "current_page": "발행",
+    "page_title": "③ 최종 승인·발행",
     "controls": [
       {
-        "id": "run_daily_content",
-        "label": "오늘의 콘텐츠 자동 분석 시작",
+        "id": "publish_draft",
+        "label": "최종 승인 후 Blogger 발행",
         "kind": "button",
-        "section": "자동분석",
+        "section": "발행",
         "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "select_top3_1",
-        "label": "1번 주제로 선택",
-        "kind": "button",
-        "section": "TOP3",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "select_top3_2",
-        "label": "2번 주제로 선택",
-        "kind": "button",
-        "section": "TOP3",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "select_top3_3",
-        "label": "3번 주제로 선택",
-        "kind": "button",
-        "section": "TOP3",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "generate_article",
-        "label": "글 자동 제작",
-        "kind": "button",
-        "section": "글작성",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
+        "enabled": false,
+        "danger": true,
         "description": ""
       }
     ],
-    "available_actions": [
-      "오늘의 콘텐츠 자동 분석 시작",
-      "1번 주제로 선택",
-      "2번 주제로 선택",
-      "3번 주제로 선택",
-      "글 자동 제작"
-    ],
-    "recommended_control_id": "gsc_28d",
+    "available_actions": [],
+    "recommended_control_id": null,
     "selection": {
-      "selected_topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
+      "draft_id": 2,
+      "status": "PUBLISHED",
+      "qc_gate": "BLOCK",
+      "qc_score": 69,
       "mode": "APPROVAL MODE"
     },
     "notice": "",
-    "counters": {
-      "top3": 3,
-      "selected": 1,
-      "drafts": 2
-    },
+    "counters": {},
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -138,7 +91,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T16:31:25+09:00"
+    "updated_at": "2026-10-09T16:32:35+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -289,9 +242,9 @@
     "source_count": 2,
     "qc": {
       "version": "pro-qc-v3",
-      "publish_gate": "PASS",
-      "editorial_readiness_score": 98,
-      "critical_count": 0,
+      "publish_gate": "BLOCK",
+      "editorial_readiness_score": 69,
+      "critical_count": 1,
       "warning_count": 0,
       "info_count": 1,
       "metrics": {
@@ -310,7 +263,7 @@
         "numeric_claim_candidates": 0,
         "numeric_high_risk": 0,
         "numeric_medium_risk": 0,
-        "title_similarity": 0.308
+        "title_similarity": 1.0
       },
       "outline": {
         "h2": [
@@ -328,6 +281,12 @@
           "code": "IMAGE_NONE",
           "message": "본문 이미지가 없습니다. 승인 공식요건은 아니며, 필요한 경우 대표/설명 이미지를 추가하세요.",
           "blocking": false
+        },
+        {
+          "severity": "CRITICAL",
+          "code": "TITLE_DUPLICATE",
+          "message": "기존 제목과 유사도가 높습니다 (1.00): 누수 곰팡이와 결로 곰팡이, 흔적 차이와 구별 단서",
+          "blocking": true
         }
       ],
       "trace": {
@@ -451,6 +410,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T16:31:35+09:00"
+    "updated_at": "2026-10-09T16:32:36+09:00"
   }
 }
