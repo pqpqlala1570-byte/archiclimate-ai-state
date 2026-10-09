@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T18:29:12+09:00",
+  "generated_at": "2026-10-09T18:29:29+09:00",
   "engine_version": "V5.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,26 +10,15 @@
     "updated_at": "2026-10-09T18:27:27+09:00"
   },
   "ui": {
-    "current_page": "성과",
-    "page_title": "③ 성과·학습 > 검색 성과",
-    "controls": [
-      {
-        "id": "gsc_28d",
-        "label": "GSC 최근 28일 성과 불러오기",
-        "kind": "button",
-        "section": "성과",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      }
-    ],
-    "available_actions": [
-      "GSC 최근 28일 성과 불러오기"
-    ],
+    "current_page": "감사",
+    "page_title": "③ 성과·학습 > 수집 근거",
+    "controls": [],
+    "available_actions": [],
     "recommended_control_id": null,
     "selection": {
-      "mode": "APPROVAL MODE"
+      "mode": "APPROVAL MODE",
+      "audit_sources": 101,
+      "source_count": 101
     },
     "notice": "",
     "counters": {},
@@ -89,7 +78,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T18:29:10+09:00"
+    "updated_at": "2026-10-09T18:29:13+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -533,6 +522,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T18:29:12+09:00"
+    "updated_at": "2026-10-09T18:29:29+09:00"
   }
 }
