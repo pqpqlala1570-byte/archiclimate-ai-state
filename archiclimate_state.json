@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:11:12+09:00",
-  "engine_version": "V5.1.4",
+  "generated_at": "2026-10-09T17:22:41+09:00",
+  "engine_version": "V5.1.5",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "GSC 28d performance",
@@ -375,8 +375,15 @@
     "gsc_rows": 21,
     "matched_posts": 0,
     "eligible_posts": 0,
+    "system_matched": null,
+    "historical_matched": null,
     "min_impressions": 20,
     "min_eligible_posts": 2
+  },
+  "historical_posts": {
+    "version": "historical-blogger-v1",
+    "updated_at": null,
+    "count": 0
   },
   "connections": {
     "naver_credentials_present": true,
@@ -410,11 +417,12 @@
     "learning_summary": true,
     "grounding_summary": true,
     "evidence_coverage_summary": true,
-    "gsc_feedback_summary": true
+    "gsc_feedback_summary": true,
+    "historical_blogger_bootstrap": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:11:12+09:00"
+    "updated_at": "2026-10-09T17:22:41+09:00"
   }
 }
