@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T19:57:54+09:00",
-  "engine_version": "V5.3.1",
+  "generated_at": "2026-10-09T20:13:52+09:00",
+  "engine_version": "V5.3.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "image candidates searched",
@@ -597,11 +597,13 @@
     "readability_normalizer": true,
     "paragraph_density_qc": true,
     "blogger_draft_first_publish": true,
-    "permalink_user_confirmation_gate": true
+    "permalink_user_confirmation_gate": true,
+    "comparison_image_strategy": true,
+    "comparison_image_pairing": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T19:57:54+09:00"
+    "updated_at": "2026-10-09T20:13:52+09:00"
   }
 }
