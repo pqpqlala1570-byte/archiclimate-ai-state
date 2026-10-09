@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T18:22:28+09:00",
+  "generated_at": "2026-10-09T18:22:45+09:00",
   "engine_version": "V5.2.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,44 +10,14 @@
     "updated_at": "2026-10-09T17:52:52+09:00"
   },
   "ui": {
-    "current_page": "학습",
-    "page_title": "⑤ 자료·강의 학습",
+    "current_page": "성과",
+    "page_title": "③ 성과·학습 > 검색 성과",
     "controls": [
       {
-        "id": "learning_fetch_url",
-        "label": "URL 본문 가져오기",
+        "id": "gsc_28d",
+        "label": "GSC 최근 28일 성과 불러오기",
         "kind": "button",
-        "section": "학습",
-        "visible": true,
-        "enabled": false,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "learning_save_core",
-        "label": "핵심 강의로 저장",
-        "kind": "button",
-        "section": "학습",
-        "visible": true,
-        "enabled": false,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "learning_extract_rules",
-        "label": "이 자료에서 글쓰기 규칙 추출",
-        "kind": "button",
-        "section": "학습",
-        "visible": true,
-        "enabled": false,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "learning_save_rule",
-        "label": "규칙 저장",
-        "kind": "button",
-        "section": "편집규칙",
+        "section": "성과",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -55,13 +25,11 @@
       }
     ],
     "available_actions": [
-      "규칙 저장"
+      "GSC 최근 28일 성과 불러오기"
     ],
     "recommended_control_id": null,
     "selection": {
-      "mode": "APPROVAL MODE",
-      "learning_sources": 88,
-      "active_rules": 37
+      "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {},
@@ -121,7 +89,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T18:07:40+09:00"
+    "updated_at": "2026-10-09T18:22:39+09:00"
   },
   "automation": {
     "version": "V5.1.7",
@@ -548,6 +516,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T18:22:28+09:00"
+    "updated_at": "2026-10-09T18:22:45+09:00"
   }
 }
