@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T21:00:17+09:00",
+  "generated_at": "2026-10-09T21:00:34+09:00",
   "engine_version": "V5.3.7",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "ai representative image applied",
+    "last_action": "ai image caption cleaned",
     "result": "OK",
-    "detail": "draft_id=2 published=True model=gemini-3.1-flash-image url=https://raw.githubusercontent.com/pqpqlala1570-byte/archiclimate-ai-state/main/assets/generated/draft-2/ai-image-20261009-204736.jpg",
-    "updated_at": "2026-10-09T20:47:45+09:00"
+    "detail": "draft_id=2 published=True",
+    "updated_at": "2026-10-09T21:00:25+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -145,7 +145,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T21:00:11+09:00"
+    "updated_at": "2026-10-09T21:00:25+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -402,14 +402,14 @@
       "warning_count": 0,
       "info_count": 0,
       "metrics": {
-        "chars_no_spaces": 2440,
-        "word_tokens": 845,
+        "chars_no_spaces": 2391,
+        "word_tokens": 829,
         "title_length": 28,
         "meta_length": 83,
         "h2_count": 5,
         "h3_count": 0,
         "internal_links": 2,
-        "external_links": 1,
+        "external_links": 0,
         "image_count": 1,
         "image_alt_missing": 0,
         "table_count": 1,
@@ -454,7 +454,7 @@
       "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다. Warning이 남아 있으면 100점이 될 수 없습니다."
     },
     "latest_publish_check": {
-      "checked_at": "2026-10-09T20:47:45+09:00",
+      "checked_at": "2026-10-09T21:00:25+09:00",
       "url": "https://www.archiclimate.com/2026/10/blog-post.html",
       "http_status": 200,
       "canonical": "https://www.archiclimate.com/2026/10/blog-post.html",
@@ -509,8 +509,8 @@
     "published": 1,
     "approved": 0,
     "verified_experiences": 0,
-    "draft_versions": 5,
-    "publish_checks": 3,
+    "draft_versions": 6,
+    "publish_checks": 4,
     "gsc_snapshots": 4
   },
   "learning": {
@@ -604,6 +604,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T21:00:17+09:00"
+    "updated_at": "2026-10-09T21:00:34+09:00"
   }
 }
