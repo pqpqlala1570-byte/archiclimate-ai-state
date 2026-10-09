@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:59:29+09:00",
+  "generated_at": "2026-10-09T20:59:46+09:00",
   "engine_version": "V5.3.7",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -29,7 +29,7 @@
         "kind": "button",
         "section": "대표 이미지",
         "visible": true,
-        "enabled": true,
+        "enabled": false,
         "danger": false,
         "description": ""
       },
@@ -66,7 +66,6 @@
     ],
     "available_actions": [
       "AI 대표 이미지 생성",
-      "AI 대표 이미지 적용",
       "AI 자동 다듬기 + QC 재검사",
       "수정본 저장 + QC 재검사",
       "검토 메모 저장"
@@ -78,7 +77,7 @@
       "qc_gate": "PASS",
       "qc_score": 100,
       "mode": "APPROVAL MODE",
-      "ai_image_ready": true,
+      "ai_image_ready": false,
       "editable_fields": [
         "title",
         "search_description",
@@ -146,7 +145,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:47:45+09:00"
+    "updated_at": "2026-10-09T20:59:41+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -605,6 +604,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:59:29+09:00"
+    "updated_at": "2026-10-09T20:59:46+09:00"
   }
 }
