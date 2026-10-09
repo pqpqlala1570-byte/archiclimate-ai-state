@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:46:06+09:00",
+  "generated_at": "2026-10-09T20:47:23+09:00",
   "engine_version": "V5.3.6",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "ai representative image applied",
-    "result": "ERROR",
-    "detail": "draft_id=2 RuntimeError: GitHub 저장소 확인 실패 HTTP 404",
-    "updated_at": "2026-10-09T20:41:03+09:00"
+    "last_action": "ai image generated",
+    "result": "OK",
+    "detail": "draft_id=2 provider=Gemini model=gemini-3.1-flash-image role=COMPARISON_INFOGRAPHIC path=C:\\Users\\YK\\Desktop\\Archiclimate_Main\\data\\generated_images\\draft_2\\archiclimate-ai-20261009-204709.jpg",
+    "updated_at": "2026-10-09T20:47:09+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -29,7 +29,7 @@
         "kind": "button",
         "section": "대표 이미지",
         "visible": true,
-        "enabled": false,
+        "enabled": true,
         "danger": false,
         "description": ""
       },
@@ -66,6 +66,7 @@
     ],
     "available_actions": [
       "AI 대표 이미지 생성",
+      "AI 대표 이미지 적용",
       "AI 자동 다듬기 + QC 재검사",
       "수정본 저장 + QC 재검사",
       "검토 메모 저장"
@@ -77,7 +78,7 @@
       "qc_gate": "PASS",
       "qc_score": 98,
       "mode": "APPROVAL MODE",
-      "ai_image_ready": false,
+      "ai_image_ready": true,
       "editable_fields": [
         "title",
         "search_description",
@@ -145,7 +146,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:46:03+09:00"
+    "updated_at": "2026-10-09T20:47:09+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -609,6 +610,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:46:06+09:00"
+    "updated_at": "2026-10-09T20:47:23+09:00"
   }
 }
