@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:00:32+09:00",
+  "generated_at": "2026-10-09T17:00:49+09:00",
   "engine_version": "V5.1.3",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,54 +10,34 @@
     "updated_at": "2026-10-09T16:32:47+09:00"
   },
   "ui": {
-    "current_page": "자동화",
-    "page_title": "① 블로그 자동화",
+    "current_page": "초안",
+    "page_title": "② 초안·QC",
     "controls": [
       {
-        "id": "run_daily_content",
-        "label": "오늘의 콘텐츠 자동 분석 시작",
+        "id": "ai_polish_draft",
+        "label": "AI 자동 다듬기 + QC 재검사",
         "kind": "button",
-        "section": "자동분석",
+        "section": "초안",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_1",
-        "label": "1번 주제로 선택",
+        "id": "save_draft_edit",
+        "label": "수정본 저장 + QC 재검사",
         "kind": "button",
-        "section": "TOP3",
+        "section": "고급 수동 편집",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_2",
-        "label": "2번 주제로 선택",
+        "id": "save_draft_note",
+        "label": "검토 메모 저장",
         "kind": "button",
-        "section": "TOP3",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "select_top3_3",
-        "label": "3번 주제로 선택",
-        "kind": "button",
-        "section": "TOP3",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "generate_article",
-        "label": "글 자동 제작",
-        "kind": "button",
-        "section": "글작성",
+        "section": "초안",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -65,23 +45,28 @@
       }
     ],
     "available_actions": [
-      "오늘의 콘텐츠 자동 분석 시작",
-      "1번 주제로 선택",
-      "2번 주제로 선택",
-      "3번 주제로 선택",
-      "글 자동 제작"
+      "AI 자동 다듬기 + QC 재검사",
+      "수정본 저장 + QC 재검사",
+      "검토 메모 저장"
     ],
-    "recommended_control_id": "gsc_28d",
+    "recommended_control_id": null,
     "selection": {
-      "selected_topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
-      "mode": "APPROVAL MODE"
+      "draft_id": 2,
+      "status": "PUBLISHED",
+      "qc_gate": "PASS",
+      "qc_score": 98,
+      "mode": "APPROVAL MODE",
+      "editable_fields": [
+        "title",
+        "search_description",
+        "permalink",
+        "body_html"
+      ],
+      "preferred_edit_mode": "AI_EDITORIAL_POLISH",
+      "html_manual_edit_is_advanced": true
     },
     "notice": "",
-    "counters": {
-      "top3": 3,
-      "selected": 1,
-      "drafts": 2
-    },
+    "counters": {},
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -138,7 +123,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T17:00:22+09:00"
+    "updated_at": "2026-10-09T17:00:35+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -289,9 +274,9 @@
     "source_count": 2,
     "qc": {
       "version": "pro-qc-v3",
-      "publish_gate": "BLOCK",
-      "editorial_readiness_score": 69,
-      "critical_count": 1,
+      "publish_gate": "PASS",
+      "editorial_readiness_score": 98,
+      "critical_count": 0,
       "warning_count": 0,
       "info_count": 1,
       "metrics": {
@@ -310,7 +295,7 @@
         "numeric_claim_candidates": 0,
         "numeric_high_risk": 0,
         "numeric_medium_risk": 0,
-        "title_similarity": 1.0
+        "title_similarity": 0.308
       },
       "outline": {
         "h2": [
@@ -328,12 +313,6 @@
           "code": "IMAGE_NONE",
           "message": "본문 이미지가 없습니다. 승인 공식요건은 아니며, 필요한 경우 대표/설명 이미지를 추가하세요.",
           "blocking": false
-        },
-        {
-          "severity": "CRITICAL",
-          "code": "TITLE_DUPLICATE",
-          "message": "기존 제목과 유사도가 높습니다 (1.00): 누수 곰팡이와 결로 곰팡이, 흔적 차이와 구별 단서",
-          "blocking": true
         }
       ],
       "trace": {
@@ -457,6 +436,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:00:32+09:00"
+    "updated_at": "2026-10-09T17:00:49+09:00"
   }
 }
