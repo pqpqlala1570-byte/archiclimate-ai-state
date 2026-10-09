@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:31:00+09:00",
+  "generated_at": "2026-10-09T20:31:17+09:00",
   "engine_version": "V5.3.4",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "draft note saved",
-    "result": "OK",
-    "detail": "draft_id=2",
-    "updated_at": "2026-10-09T20:28:03+09:00"
+    "last_action": "ai image generated",
+    "result": "ERROR",
+    "detail": "draft_id=2 RuntimeError: Gemini 이미지 생성 실패 HTTP 404: models/gemini-nano-banana-2.1 is not found for API version v1, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "updated_at": "2026-10-09T20:31:05+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -145,7 +145,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:30:58+09:00"
+    "updated_at": "2026-10-09T20:31:06+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -606,6 +606,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:31:00+09:00"
+    "updated_at": "2026-10-09T20:31:17+09:00"
   }
 }
