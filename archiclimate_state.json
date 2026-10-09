@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T15:03:02+09:00",
+  "generated_at": "2026-10-09T15:04:19+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "draft edited and rechecked",
+    "last_action": "daily content automation",
     "result": "OK",
-    "detail": "draft_id=1 qc=PASS score=100",
-    "updated_at": "2026-10-05T23:13:40+09:00"
+    "detail": "sources=20 archived=20 top3=3 mode=APPROVAL MODE",
+    "updated_at": "2026-10-09T15:04:15+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -52,34 +52,22 @@
         "enabled": true,
         "danger": false,
         "description": ""
-      },
-      {
-        "id": "generate_article",
-        "label": "글 자동 제작",
-        "kind": "button",
-        "section": "글작성",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
       }
     ],
     "available_actions": [
       "오늘의 콘텐츠 자동 분석 시작",
       "1번 주제로 선택",
       "2번 주제로 선택",
-      "3번 주제로 선택",
-      "글 자동 제작"
+      "3번 주제로 선택"
     ],
-    "recommended_control_id": "publish_draft",
+    "recommended_control_id": "select_top3",
     "selection": {
-      "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
       "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {
       "top3": 3,
-      "selected": 1,
+      "selected": 0,
       "drafts": 1
     },
     "workflow": [
@@ -95,8 +83,8 @@
       {
         "stage": "TOPIC",
         "title": "TOP3 선택",
-        "status": "DONE",
-        "detail": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
+        "status": "ACTION",
+        "detail": "분석 결과 TOP3 중 하나 선택",
         "page": "자동화",
         "control_id": "select_top3",
         "control_label": "TOP3 중 선택"
@@ -104,8 +92,8 @@
       {
         "stage": "EXPERIENCE",
         "title": "실제 경험 자동처리",
-        "status": "DONE",
-        "detail": "기존 검증 경험을 자동 매칭하고, 없으면 경험 없이 자동 진행",
+        "status": "WAIT",
+        "detail": "주제 선택 후 기존 경험 DB를 자동 확인",
         "page": "자동화",
         "control_id": null,
         "control_label": null
@@ -114,7 +102,7 @@
         "stage": "DRAFT",
         "title": "글 자동 제작",
         "status": "DONE",
-        "detail": "본문·SEO 패키지·QC를 자동 생성",
+        "detail": "주제 선택 후 자동 진행",
         "page": "자동화",
         "control_id": "generate_article",
         "control_label": "글 자동 제작"
@@ -138,163 +126,144 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T15:02:52+09:00"
+    "updated_at": "2026-10-09T15:04:15+09:00"
   },
   "automation": {
-    "version": "V4.2.1",
-    "generated_at": "2026-10-05T20:57:18+09:00",
+    "version": "V5.0.0",
+    "generated_at": "2026-10-09T15:04:14+09:00",
     "mode": "APPROVAL MODE",
     "query": "누수 결로 곰팡이 단열 환기 방수 배수 건축 하자",
     "source_count": 20,
-    "topic_cluster_count": 8,
+    "topic_cluster_count": 50,
     "top3": [
       {
-        "topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-        "approval_score": 81.1,
-        "monetization_score": 72.9,
-        "mode_score": 81.1,
-        "search_intent": "HOW_TO",
-        "similarity_to_existing": 0.42,
+        "topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
+        "approval_score": 74.7,
+        "monetization_score": 66.1,
+        "mode_score": 74.7,
+        "search_intent": "DIAGNOSIS",
+        "similarity_to_existing": 0.39,
         "site_fit": 12,
-        "specificity": 14.3,
-        "experience_input": 2,
-        "evidence_count": 4,
-        "verified_claims": 0,
-        "source_quality": 3,
-        "risks": [],
-        "concept_key": "누수|결로",
-        "support_count": 7,
-        "channel_count": 2,
-        "channels": {
-          "YouTube": 2,
-          "Naver Blog": 5
-        },
-        "observed_keyword": "누수 · 결로 · 곰팡이 · 배수",
-        "supporting_sources": [
-          {
-            "source": "YouTube",
-            "title": "비싼 것도 다 소용없었어요 인테리어 했는데 결로 곰팡이가 생기는 이유 ⎮ 단열 방풍 누수에 진심인 전문가가 말하는 창호 시공 방법 기초공사가 중요합니다",
-            "url": "https://www.youtube.com/watch?v=Hi4o1ortO50"
-          },
-          {
-            "source": "YouTube",
-            "title": "누수와 결로.. 어디선가 냄새가 난다... 심각한 곰팜이 균들",
-            "url": "https://www.youtube.com/watch?v=w_Q9UwfNmlc"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "강남구 누수 원인부터 점검 흐름까지, 초기에 놓치기 쉬운 포인트 ....",
-            "url": "https://blog.naver.com/n6783111/224432219209"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "발코니전용창 천호동, 작은 창 하나까지 틈과 바람을 함께 막는 방....",
-            "url": "https://blog.naver.com/korgget222/224431589911"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "평택 고덕신도시 신안인스빌시그니처 누수도배 아랫집누수피해복....",
-            "url": "https://blog.naver.com/ab9292we/224432089406"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "창문 결로 생기는 이유와 예방법｜곰팡이 생기기 전 환기·습도 관....",
-            "url": "https://blog.naver.com/yjgood26720/224431916954"
-          }
-        ],
-        "source_copy_similarity": 0.26,
-        "automation_score": 95.6,
-        "why_recommended": "관련 자료 7건·채널 2개 / 기존 글 유사도 0.42 / HOW_TO 의도"
-      },
-      {
-        "topic": "누수, 방수공사 전에 원인부터 확인하는 점검 순서",
-        "approval_score": 77.1,
-        "monetization_score": 80.0,
-        "mode_score": 77.1,
-        "search_intent": "HOW_TO",
-        "similarity_to_existing": 0.36,
-        "site_fit": 8,
-        "specificity": 18,
+        "specificity": 12.2,
         "experience_input": 2,
         "evidence_count": 3,
         "verified_claims": 0,
         "source_quality": 2,
         "risks": [],
-        "concept_key": "누수|방수",
-        "support_count": 3,
-        "channel_count": 1,
-        "channels": {
-          "Naver Blog": 3
-        },
-        "observed_keyword": "누수 · 방수 · 배수 · 곰팡이",
-        "supporting_sources": [
-          {
-            "source": "Naver Blog",
-            "title": "변기막힘 뚫는법 셀프 시도 실패 후 전문 변기뚫는업체 불러 관통기....",
-            "url": "https://blog.naver.com/gfhnnnnn/224432217779"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "김해 현대4차 아파트 베란다 천장 누수 원인 해결과 피해 세대 탄성....",
-            "url": "https://blog.naver.com/greenhome_1004/224432127916"
-          },
-          {
-            "source": "Naver Blog",
-            "title": "\"주말마다 시골로 갑니다\", 낡은 15평 시골집 샀더니 이렇게 달라졌....",
-            "url": "https://blog.naver.com/esther_416/224432010995"
-          }
-        ],
-        "source_copy_similarity": 0.24,
-        "automation_score": 85.6,
-        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.36 / HOW_TO 의도"
-      },
-      {
-        "topic": "곰팡이 문제를 잘못 판단하지 않기 위한 원인 확인 순서",
-        "approval_score": 68.9,
-        "monetization_score": 64.8,
-        "mode_score": 68.9,
-        "search_intent": "HOW_TO",
-        "similarity_to_existing": 0.41,
-        "site_fit": 4,
-        "specificity": 15.0,
-        "experience_input": 2,
-        "evidence_count": 3,
-        "verified_claims": 0,
-        "source_quality": 2,
-        "risks": [],
-        "concept_key": "곰팡이",
+        "content_type": "COMPARISON",
+        "concept_key": "결로|곰팡이",
         "support_count": 3,
         "channel_count": 1,
         "channels": {
           "YouTube": 3
         },
-        "observed_keyword": "곰팡이",
+        "observed_keyword": "결로 · 곰팡이 · 단열",
         "supporting_sources": [
           {
             "source": "YouTube",
-            "title": "당신의 집에 곰팡이가 생기는 3가지 이유",
-            "url": "https://www.youtube.com/watch?v=wM64BDJxEMs"
+            "title": "결로와 곰팡이를 예방하려면",
+            "url": "https://www.youtube.com/watch?v=xZB6bqUAZxA"
           },
           {
             "source": "YouTube",
-            "title": "벽에 생긴 곰팡이 누가 도배하나요?",
-            "url": "https://www.youtube.com/watch?v=jgLAlpS7Di0"
+            "title": "결로와 곰팡이 없어져라",
+            "url": "https://www.youtube.com/watch?v=fOAIzQha7P0"
           },
           {
             "source": "YouTube",
-            "title": "곰팡이 가득한 집! 직접 고치기",
-            "url": "https://www.youtube.com/watch?v=XvS4HCCO98A"
+            "title": "상가주택 등의 단열과 결로,곰팡이 문제/결로와 곰팡이 발생 원인 5가지",
+            "url": "https://www.youtube.com/watch?v=hrdcYuH3Awo"
           }
         ],
-        "source_copy_similarity": 0.34,
-        "automation_score": 77.4,
-        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.41 / HOW_TO 의도"
+        "derivation": "COMPARISON · 다중 출처 개념 합성",
+        "source_copy_similarity": 0.24,
+        "automation_score": 83.2,
+        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.39 / DIAGNOSIS 의도"
+      },
+      {
+        "topic": "누수 문제가 생겼을 때 원인을 좁히는 방법",
+        "approval_score": 64.5,
+        "monetization_score": 63.9,
+        "mode_score": 64.5,
+        "search_intent": "HOW_TO",
+        "similarity_to_existing": 0.33,
+        "site_fit": 4,
+        "specificity": 12.7,
+        "experience_input": 1,
+        "evidence_count": 3,
+        "verified_claims": 0,
+        "source_quality": 3,
+        "risks": [],
+        "content_type": "PROBLEM_SOLVING",
+        "concept_key": "누수",
+        "support_count": 3,
+        "channel_count": 2,
+        "channels": {
+          "YouTube": 1,
+          "Naver Blog": 2
+        },
+        "observed_keyword": "누수",
+        "supporting_sources": [
+          {
+            "source": "YouTube",
+            "title": "배관도, 욕실도 아니었다… 누수의 진짜 원인은?",
+            "url": "https://www.youtube.com/watch?v=3aM29G3qx30"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "강서구 보일러배관누수 무해한약품 마곡동 등촌동 난방배관누수 성....",
+            "url": "https://blog.naver.com/aggressive14795/224436220607"
+          },
+          {
+            "source": "Naver Blog",
+            "title": "평택시 베란다누수 해결 배다리프라자 주변 점검과 정밀 탐지",
+            "url": "https://blog.naver.com/korea_leak_detection/224430429210"
+          }
+        ],
+        "derivation": "PROBLEM_SOLVING · 다중 출처 개념 합성",
+        "source_copy_similarity": 0.29,
+        "automation_score": 75.5,
+        "why_recommended": "관련 자료 3건·채널 2개 / 기존 글 유사도 0.33 / HOW_TO 의도"
+      },
+      {
+        "topic": "창호 창가에 물이 생기는 이유: 결로와 누수는 물이 생기는 과정부터 다르다",
+        "approval_score": 65.3,
+        "monetization_score": 64.3,
+        "mode_score": 65.3,
+        "search_intent": "DIAGNOSIS",
+        "similarity_to_existing": 0.36,
+        "site_fit": 12,
+        "specificity": 16.2,
+        "experience_input": 1,
+        "evidence_count": 1,
+        "verified_claims": 0,
+        "source_quality": 1,
+        "risks": [],
+        "content_type": "PRINCIPLE_EXPLAINER",
+        "concept_key": "누수|결로",
+        "support_count": 1,
+        "channel_count": 1,
+        "channels": {
+          "YouTube": 1
+        },
+        "observed_keyword": "누수 · 결로 · 곰팡이 · 단열",
+        "supporting_sources": [
+          {
+            "source": "YouTube",
+            "title": "비싼 것도 다 소용없었어요 인테리어 했는데 결로 곰팡이가 생기는 이유 ⎮ 단열 방풍 누수에 진심인 전문가가 말하는 창호 시공 방법 기초공사가 중요합니다",
+            "url": "https://www.youtube.com/watch?v=Hi4o1ortO50"
+          }
+        ],
+        "derivation": "PRINCIPLE_EXPLAINER · 다중 출처 개념 합성",
+        "source_copy_similarity": 0.3,
+        "automation_score": 70.8,
+        "why_recommended": "관련 자료 1건·채널 1개 / 기존 글 유사도 0.36 / DIAGNOSIS 의도"
       }
     ],
-    "selected_topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-    "has_experience": false,
+    "selected_topic": null,
+    "has_experience": null,
     "experience_id": null,
-    "status": "READY_FOR_DRAFT"
+    "status": "TOP3_READY"
   },
   "draft_review": {
     "draft_id": 1,
@@ -425,7 +394,7 @@
     "gsc_snapshots": 0
   },
   "learning": {
-    "sources": 3,
+    "sources": 23,
     "full_text": 3,
     "core_courses": 3,
     "active_rules": 37,
@@ -467,6 +436,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T15:03:02+09:00"
+    "updated_at": "2026-10-09T15:04:19+09:00"
   }
 }
