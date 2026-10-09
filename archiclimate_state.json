@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T19:56:47+09:00",
+  "generated_at": "2026-10-09T19:57:04+09:00",
   "engine_version": "V5.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,14 +10,54 @@
     "updated_at": "2026-10-09T19:56:04+09:00"
   },
   "ui": {
-    "current_page": "성과",
-    "page_title": "③ 성과·학습 > 검색 성과",
+    "current_page": "초안",
+    "page_title": "② 작성·발행 > 초안 검토",
     "controls": [
       {
-        "id": "gsc_28d",
-        "label": "GSC 최근 28일 성과 불러오기",
+        "id": "find_safe_image",
+        "label": "저작권 안전 이미지 찾기",
         "kind": "button",
-        "section": "성과",
+        "section": "대표 이미지",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "apply_image",
+        "label": "대표 이미지 적용",
+        "kind": "button",
+        "section": "대표 이미지",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "ai_polish_draft",
+        "label": "AI 자동 다듬기 + QC 재검사",
+        "kind": "button",
+        "section": "초안",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "save_draft_edit",
+        "label": "수정본 저장 + QC 재검사",
+        "kind": "button",
+        "section": "고급 수동 편집",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "save_draft_note",
+        "label": "검토 메모 저장",
+        "kind": "button",
+        "section": "초안",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -25,11 +65,28 @@
       }
     ],
     "available_actions": [
-      "GSC 최근 28일 성과 불러오기"
+      "저작권 안전 이미지 찾기",
+      "대표 이미지 적용",
+      "AI 자동 다듬기 + QC 재검사",
+      "수정본 저장 + QC 재검사",
+      "검토 메모 저장"
     ],
     "recommended_control_id": null,
     "selection": {
-      "mode": "APPROVAL MODE"
+      "draft_id": 2,
+      "status": "PUBLISHED",
+      "qc_gate": "PASS",
+      "qc_score": 98,
+      "mode": "APPROVAL MODE",
+      "image_candidates": 8,
+      "editable_fields": [
+        "title",
+        "search_description",
+        "permalink",
+        "body_html"
+      ],
+      "preferred_edit_mode": "AI_EDITORIAL_POLISH",
+      "html_manual_edit_is_advanced": true
     },
     "notice": "",
     "counters": {},
@@ -89,7 +146,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T19:56:47+09:00"
+    "updated_at": "2026-10-09T19:57:01+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -545,6 +602,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T19:56:47+09:00"
+    "updated_at": "2026-10-09T19:57:04+09:00"
   }
 }
