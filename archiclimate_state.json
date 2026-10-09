@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:50:57+09:00",
+  "generated_at": "2026-10-09T17:52:59+09:00",
   "engine_version": "V5.1.7",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "GSC 28d performance",
+    "last_action": "daily content automation",
     "result": "OK",
-    "detail": "rows=21 persisted=yes historical=45 matched=16 eligible=4 feedback=ACTIVE",
-    "updated_at": "2026-10-09T17:50:32+09:00"
+    "detail": "sources=106 archived=60 top3=3 mode=APPROVAL MODE",
+    "updated_at": "2026-10-09T17:52:52+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -126,168 +126,221 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T17:50:43+09:00"
+    "updated_at": "2026-10-09T17:52:52+09:00"
   },
   "automation": {
-    "version": "V5.1.4",
-    "generated_at": "2026-10-09T17:25:28+09:00",
+    "version": "V5.1.7",
+    "generated_at": "2026-10-09T17:52:52+09:00",
     "mode": "APPROVAL MODE",
     "query": "누수 결로 곰팡이 단열 환기 방수 배수 건축 하자",
-    "source_count": 20,
-    "topic_cluster_count": 45,
+    "source_count": 106,
+    "topic_cluster_count": 80,
     "top3": [
       {
-        "topic": "곰팡이가 반복될 때 도배보다 먼저 확인할 결로·단열 문제",
-        "approval_score": 79.0,
-        "monetization_score": 62.7,
-        "mode_score": 79.0,
-        "search_intent": "INFORMATIONAL",
+        "topic": "타일와 비슷해 보이는 다른 하자를 구분하는 기준",
+        "approval_score": 73.3,
+        "monetization_score": 63.5,
+        "mode_score": 73.3,
+        "search_intent": "DIAGNOSIS",
         "similarity_to_existing": 0.33,
-        "site_fit": 12,
-        "specificity": 10.3,
+        "site_fit": 8,
+        "specificity": 8.7,
         "experience_input": 2,
         "evidence_count": 4,
         "verified_claims": 0,
         "source_quality": 3,
         "risks": [],
-        "content_type": "PROBLEM_SOLVING",
-        "concept_key": "결로|곰팡이",
+        "content_type": "COMPARISON",
+        "concept_key": "타일",
         "support_count": 5,
         "channel_count": 2,
         "channels": {
-          "YouTube": 4,
-          "Naver Blog": 1
+          "Naver Blog": 1,
+          "YouTube": 4
         },
-        "observed_keyword": "결로 · 곰팡이 · 단열 · 습기",
+        "observed_keyword": "타일 · 하자",
         "supporting_sources": [
           {
-            "source": "YouTube",
-            "title": "결로와 곰팡이를 예방하려면",
-            "url": "https://www.youtube.com/watch?v=xZB6bqUAZxA"
-          },
-          {
-            "source": "YouTube",
-            "title": "결로와 곰팡이 없어져라",
-            "url": "https://www.youtube.com/watch?v=fOAIzQha7P0"
-          },
-          {
-            "source": "YouTube",
-            "title": "곰팡이 결로 습기 이제 그만 ‍ ️ 외벽 단열시공 이렇게 하면 괜찮습니다 ️ 폼을 충분히 쏘고 밀착하게 붙이는 이코치 안방 거실 확장공사 이렇게 따라하세요",
-            "url": "https://www.youtube.com/watch?v=lQGufC2_izM"
-          },
-          {
-            "source": "YouTube",
-            "title": "상가주택 등의 단열과 결로,곰팡이 문제/결로와 곰팡이 발생 원인 5가지",
-            "url": "https://www.youtube.com/watch?v=hrdcYuH3Awo"
-          },
-          {
             "source": "Naver Blog",
-            "title": "시흥베란다단열시공, 배곧 아파트 결로와 곰팡이 재발 방지 공사",
-            "url": "https://blog.naver.com/embarras123450/224436296521"
-          }
-        ],
-        "derivation": "PROBLEM_SOLVING · 다중 출처 개념 합성",
-        "source_copy_similarity": 0.19,
-        "gsc_feedback_adjustment": 1.3,
-        "gsc_feedback_confidence": "MEDIUM",
-        "gsc_feedback_reason": "GSC 과거성과 지수 63.2, 보정 +1.3",
-        "automation_score": 90.3,
-        "why_recommended": "관련 자료 5건·채널 2개 / 기존 글 유사도 0.33 / INFORMATIONAL 의도 / GSC +1.3"
-      },
-      {
-        "topic": "곰팡이와 비슷해 보이는 다른 하자를 구분하는 기준",
-        "approval_score": 68.4,
-        "monetization_score": 61.8,
-        "mode_score": 68.4,
-        "search_intent": "DIAGNOSIS",
-        "similarity_to_existing": 0.44,
-        "site_fit": 8,
-        "specificity": 9.0,
-        "experience_input": 2,
-        "evidence_count": 3,
-        "verified_claims": 0,
-        "source_quality": 3,
-        "risks": [],
-        "content_type": "COMPARISON",
-        "concept_key": "곰팡이",
-        "support_count": 3,
-        "channel_count": 2,
-        "channels": {
-          "YouTube": 2,
-          "Naver Blog": 1
-        },
-        "observed_keyword": "곰팡이",
-        "supporting_sources": [
-          {
-            "source": "YouTube",
-            "title": "곰팡이 가득한 집! 직접 고치기",
-            "url": "https://www.youtube.com/watch?v=XvS4HCCO98A"
+            "title": "빌라 데코타일 코팅/요양병원 바닥코팅/홍제동 바닥코팅/유치원 바....",
+            "url": "https://blog.naver.com/j_szone/224436240373"
           },
           {
             "source": "YouTube",
-            "title": "벽에 생긴 곰팡이 누가 도배하나요?",
-            "url": "https://www.youtube.com/watch?v=jgLAlpS7Di0"
+            "title": "타일하자유형(백화현상)",
+            "url": "https://www.youtube.com/watch?v=WozwMoQn9WQ"
           },
           {
-            "source": "Naver Blog",
-            "title": "인천 베란다곰팡이청소, 남동구 구축아파트 베란다 곰팡이 제거 현....",
-            "url": "https://blog.naver.com/isang087/224435496188"
+            "source": "YouTube",
+            "title": "타일 하얀얼룩 백화현상 석회질 이렇게만 하세요. 다 제거됩니다.",
+            "url": "https://www.youtube.com/watch?v=KtQ7_nAG0vc"
+          },
+          {
+            "source": "YouTube",
+            "title": "타일 & 욕실 ( 타일 하자 들뜸 크랙 균열이 생기는 3가지원인 해결방법!!! 욕실공사 하자 )",
+            "url": "https://www.youtube.com/watch?v=DNkeDXBxjWQ"
+          },
+          {
+            "source": "YouTube",
+            "title": "타일 백화현상 제거, 초간단 청소방법 (독한 세제 필요없습니다)",
+            "url": "https://www.youtube.com/watch?v=Q-pr7Jy5OL4"
           }
         ],
         "derivation": "COMPARISON · 다중 출처 개념 합성",
-        "source_copy_similarity": 0.36,
+        "source_copy_similarity": 0.28,
+        "domain_id": "WET_AREA",
+        "domain_label": "욕실·베란다·옥상",
         "gsc_feedback_adjustment": 0.0,
+        "gsc_performance_adjustment": 0.0,
+        "topic_saturation_penalty": 0,
         "gsc_feedback_confidence": "MEDIUM",
-        "gsc_feedback_reason": "유사한 과거 성과 신호 없음",
-        "automation_score": 79.4,
-        "why_recommended": "관련 자료 3건·채널 2개 / 기존 글 유사도 0.44 / DIAGNOSIS 의도"
+        "gsc_feedback_reason": "직접 성과신호 없음 · 포화 -0.0",
+        "topic_axes": {
+          "problem": [
+            "FINISH"
+          ],
+          "location": [],
+          "symptom": [],
+          "intent": [
+            "COMPARE",
+            "DECIDE"
+          ],
+          "context": [],
+          "content_type": [
+            "COMPARISON"
+          ]
+        },
+        "topic_axes_display": "problem=재료·마감 / intent=비교·구분,판단",
+        "learning_signal_count": 0,
+        "automation_score": 87.3,
+        "why_recommended": "관련 자료 5건·채널 2개 / 기존 글 유사도 0.33 / DIAGNOSIS 의도"
       },
       {
-        "topic": "누수 수리 전에 확인할 판단 기준",
-        "approval_score": 62.5,
-        "monetization_score": 75.6,
-        "mode_score": 62.5,
-        "search_intent": "COMMERCIAL",
-        "similarity_to_existing": 0.41,
-        "site_fit": 4,
-        "specificity": 8.5,
+        "topic": "곰팡이가 반복될 때 도배보다 먼저 확인할 결로·단열 문제",
+        "approval_score": 74.0,
+        "monetization_score": 59.7,
+        "mode_score": 74.0,
+        "search_intent": "INFORMATIONAL",
+        "similarity_to_existing": 0.33,
+        "site_fit": 12,
+        "specificity": 10.3,
         "experience_input": 2,
         "evidence_count": 3,
         "verified_claims": 0,
         "source_quality": 2,
         "risks": [],
-        "content_type": "DECISION_GUIDE",
-        "concept_key": "누수",
+        "content_type": "PROBLEM_SOLVING",
+        "concept_key": "단열|결로",
         "support_count": 3,
         "channel_count": 1,
         "channels": {
-          "Naver Blog": 3
+          "YouTube": 3
         },
-        "observed_keyword": "누수",
+        "observed_keyword": "결로 · 단열 · 열교 · 환기",
         "supporting_sources": [
           {
-            "source": "Naver Blog",
-            "title": "고양시 화정동 누수공사 샷시누수 접합부를 보강해 반복되던 빗물....",
-            "url": "https://blog.naver.com/5z_4b/224436333409"
+            "source": "YouTube",
+            "title": "결로현상의 원인과 결로를 방지하는 방법/단열과 결로방지를 잘 하는 방법",
+            "url": "https://www.youtube.com/watch?v=fM0HwmrTDUA"
           },
           {
-            "source": "Naver Blog",
-            "title": "강북구 수유동 누수탐지 욕실누수 흔적을 따라 아랫집누수 시작점....",
-            "url": "https://blog.naver.com/5z_4b/224436292145"
+            "source": "YouTube",
+            "title": "단열, 결로, 열교, 환기",
+            "url": "https://www.youtube.com/watch?v=lJV30Odu88Q"
           },
           {
-            "source": "Naver Blog",
-            "title": "강남구 압구정 보일러누수 난방배관누수 수치가 흔들릴 때 바닥누....",
-            "url": "https://blog.naver.com/5z_4b/224436269026"
+            "source": "YouTube",
+            "title": "단열재만 붙이면 끝? 발코니부터 벽체까지 교차단열·열교를 현장에서 직접 확인했습니다｜여름 축열과 겨울 결로까지 달라지는 이유",
+            "url": "https://www.youtube.com/watch?v=6uXZ3yP5eGs"
           }
         ],
-        "derivation": "DECISION_GUIDE · 다중 출처 개념 합성",
-        "source_copy_similarity": 0.25,
-        "gsc_feedback_adjustment": 0.0,
+        "derivation": "PROBLEM_SOLVING · 다중 출처 개념 합성",
+        "source_copy_similarity": 0.24,
+        "domain_id": "CONDENSATION",
+        "domain_label": "결로·단열·환기",
+        "gsc_feedback_adjustment": -4.0,
+        "gsc_performance_adjustment": 0.0,
+        "topic_saturation_penalty": 4.0,
         "gsc_feedback_confidence": "MEDIUM",
-        "gsc_feedback_reason": "유사한 과거 성과 신호 없음",
-        "automation_score": 67.0,
-        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.41 / COMMERCIAL 의도"
+        "gsc_feedback_reason": "직접 성과신호 없음 · 포화 -4.0",
+        "topic_axes": {
+          "problem": [
+            "THERMAL"
+          ],
+          "location": [],
+          "symptom": [
+            "MOLD"
+          ],
+          "intent": [
+            "INSPECT"
+          ],
+          "context": [],
+          "content_type": [
+            "PROBLEM_SOLVING"
+          ]
+        },
+        "topic_axes_display": "problem=열환경·결로 / symptom=곰팡이 / intent=점검",
+        "learning_signal_count": 0,
+        "automation_score": 74.5,
+        "why_recommended": "관련 자료 3건·채널 1개 / 기존 글 유사도 0.33 / INFORMATIONAL 의도 / 학습 -4.0"
+      },
+      {
+        "topic": "누수가 보일 때 방수공사보다 원인 확인이 먼저인 이유",
+        "approval_score": 65.9,
+        "monetization_score": 70.3,
+        "mode_score": 65.9,
+        "search_intent": "DIAGNOSIS",
+        "similarity_to_existing": 0.35,
+        "site_fit": 8,
+        "specificity": 14.7,
+        "experience_input": 2,
+        "evidence_count": 1,
+        "verified_claims": 0,
+        "source_quality": 1,
+        "risks": [],
+        "content_type": "PROBLEM_SOLVING",
+        "concept_key": "누수|배수",
+        "support_count": 1,
+        "channel_count": 1,
+        "channels": {
+          "YouTube": 1
+        },
+        "observed_keyword": "누수 · 배수",
+        "supporting_sources": [
+          {
+            "source": "YouTube",
+            "title": "화장실 누수 원인의 모든 것 이것만 알면 끝 (배수편)..2편 급수편도 있습니다. [27]",
+            "url": "https://www.youtube.com/watch?v=p8GQAzAfQS8"
+          }
+        ],
+        "derivation": "PROBLEM_SOLVING · 다중 출처 개념 합성",
+        "source_copy_similarity": 0.23,
+        "domain_id": "WATER",
+        "domain_label": "누수·방수·배수",
+        "gsc_feedback_adjustment": -4.0,
+        "gsc_performance_adjustment": 0.0,
+        "topic_saturation_penalty": 4.0,
+        "gsc_feedback_confidence": "MEDIUM",
+        "gsc_feedback_reason": "직접 성과신호 없음 · 포화 -4.0",
+        "topic_axes": {
+          "problem": [
+            "WATER"
+          ],
+          "location": [],
+          "symptom": [],
+          "intent": [
+            "CAUSE",
+            "INSPECT"
+          ],
+          "context": [],
+          "content_type": [
+            "PROBLEM_SOLVING"
+          ]
+        },
+        "topic_axes_display": "problem=수분·누수 / intent=원인탐색,점검",
+        "learning_signal_count": 0,
+        "automation_score": 67.4,
+        "why_recommended": "관련 자료 1건·채널 1개 / 기존 글 유사도 0.35 / DIAGNOSIS 의도 / 학습 -4.0"
       }
     ],
     "selected_topic": null,
@@ -427,7 +480,7 @@
     "gsc_snapshots": 4
   },
   "learning": {
-    "sources": 34,
+    "sources": 88,
     "full_text": 3,
     "core_courses": 3,
     "active_rules": 37,
@@ -497,6 +550,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:50:57+09:00"
+    "updated_at": "2026-10-09T17:52:59+09:00"
   }
 }
