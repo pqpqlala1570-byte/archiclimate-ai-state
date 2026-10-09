@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:40:56+09:00",
+  "generated_at": "2026-10-09T20:41:13+09:00",
   "engine_version": "V5.3.5",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "ai image generated",
-    "result": "OK",
-    "detail": "draft_id=2 provider=Gemini model=gemini-3.1-flash-image role=COMPARISON_INFOGRAPHIC path=C:\\Users\\YK\\Desktop\\Archiclimate_Main\\data\\generated_images\\draft_2\\archiclimate-ai-20261009-203527.jpg",
-    "updated_at": "2026-10-09T20:35:27+09:00"
+    "last_action": "ai representative image applied",
+    "result": "ERROR",
+    "detail": "draft_id=2 RuntimeError: GitHub 저장소 확인 실패 HTTP 404",
+    "updated_at": "2026-10-09T20:41:03+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -146,7 +146,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:40:54+09:00"
+    "updated_at": "2026-10-09T20:41:03+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -517,7 +517,7 @@
     "published": 1,
     "approved": 0,
     "verified_experiences": 0,
-    "draft_versions": 3,
+    "draft_versions": 4,
     "publish_checks": 2,
     "gsc_snapshots": 4
   },
@@ -609,6 +609,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:40:56+09:00"
+    "updated_at": "2026-10-09T20:41:13+09:00"
   }
 }
