@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T21:04:24+09:00",
-  "engine_version": "V5.4.0",
+  "generated_at": "2026-10-09T21:12:40+09:00",
+  "engine_version": "V5.4.2",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "ai image caption cleaned",
@@ -552,7 +552,7 @@
     "chatgpt_subscription_is_not_local_api_access": true,
     "chatgpt_handoff_requires_one_copy_paste_roundtrip": true,
     "blogger_api_custom_permalink_not_guaranteed": true,
-    "image_generation_not_connected": true,
+    "image_generation_not_connected": false,
     "generic_google_indexing_api_not_used_for_blogger_posts": true
   },
   "safety": {
@@ -601,11 +601,12 @@
     "clean_reader_image_markup": true,
     "legacy_ai_caption_cleanup": true,
     "professional_workflow_ui": true,
-    "two_step_quick_workflow": true
+    "two_step_quick_workflow": true,
+    "bridge_reports_primary_controls_only": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T21:04:24+09:00"
+    "updated_at": "2026-10-09T21:12:40+09:00"
   }
 }
