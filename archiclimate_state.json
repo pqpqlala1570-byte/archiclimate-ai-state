@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T16:00:07+09:00",
+  "generated_at": "2026-10-09T16:11:25+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,60 +10,28 @@
     "updated_at": "2026-10-09T16:00:01+09:00"
   },
   "ui": {
-    "current_page": "초안",
-    "page_title": "② 초안·QC",
+    "current_page": "발행",
+    "page_title": "③ 최종 승인·발행",
     "controls": [
       {
-        "id": "ai_polish_draft",
-        "label": "AI 자동 다듬기 + QC 재검사",
+        "id": "publish_draft",
+        "label": "최종 승인 후 Blogger 발행",
         "kind": "button",
-        "section": "초안",
+        "section": "발행",
         "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "save_draft_edit",
-        "label": "수정본 저장 + QC 재검사",
-        "kind": "button",
-        "section": "고급 수동 편집",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
-        "description": ""
-      },
-      {
-        "id": "save_draft_note",
-        "label": "검토 메모 저장",
-        "kind": "button",
-        "section": "초안",
-        "visible": true,
-        "enabled": true,
-        "danger": false,
+        "enabled": false,
+        "danger": true,
         "description": ""
       }
     ],
-    "available_actions": [
-      "AI 자동 다듬기 + QC 재검사",
-      "수정본 저장 + QC 재검사",
-      "검토 메모 저장"
-    ],
+    "available_actions": [],
     "recommended_control_id": null,
     "selection": {
       "draft_id": 2,
       "status": "DRAFT",
       "qc_gate": "PASS",
       "qc_score": 98,
-      "mode": "APPROVAL MODE",
-      "editable_fields": [
-        "title",
-        "search_description",
-        "permalink",
-        "body_html"
-      ],
-      "preferred_edit_mode": "AI_EDITORIAL_POLISH",
-      "html_manual_edit_is_advanced": true
+      "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {},
@@ -123,7 +91,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T16:00:02+09:00"
+    "updated_at": "2026-10-09T16:11:13+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -427,6 +395,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T16:00:07+09:00"
+    "updated_at": "2026-10-09T16:11:25+09:00"
   }
 }
