@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T15:05:35+09:00",
+  "generated_at": "2026-10-09T15:08:37+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "experience auto match",
+    "last_action": "article automation generated",
     "result": "OK",
-    "detail": "no verified match; continue without fabricated experience",
-    "updated_at": "2026-10-09T15:05:24+09:00"
+    "detail": "draft_id=2 qc=PASS score=98",
+    "updated_at": "2026-10-09T15:08:36+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -80,7 +80,7 @@
     "counters": {
       "top3": 3,
       "selected": 1,
-      "drafts": 1
+      "drafts": 2
     },
     "workflow": [
       {
@@ -138,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T15:05:25+09:00"
+    "updated_at": "2026-10-09T15:08:37+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -278,12 +278,12 @@
     "status": "READY_FOR_DRAFT"
   },
   "draft_review": {
-    "draft_id": 1,
+    "draft_id": 2,
     "status": "DRAFT",
-    "topic": "창호 물자국, 누수인지 결로인지 구분하는 점검 순서",
-    "title": "창틀 물자국, 누수인지 결로인지 구분하는 5단계 점검법",
-    "search_description": "창틀 주변에 물방울이 맺히거나 물자국이 번질 때 누수인지 단순 결로인지 판별하는 실전 점검 순서입니다. 날씨와 발생 위치, 레일 배수구 확인법을 정리했습니다.",
-    "permalink": "window-frame-water-stain-leak-vs-condensation-inspection",
+    "topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
+    "title": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유와 구별법",
+    "search_description": "벽지에 번진 곰팡이가 배관 누수 때문인지 환기나 단열 결로 때문인지 번짐 형태, 얼룩의 경계면, 발생 위치의 차이로 명확히 판별하는 기준을 정리했습니다.",
+    "permalink": "leak-vs-condensation-mold-differences",
     "provider": "gemini-3.8-flash",
     "source_count": 2,
     "qc": {
@@ -294,32 +294,30 @@
       "warning_count": 0,
       "info_count": 1,
       "metrics": {
-        "chars_no_spaces": 2541,
-        "word_tokens": 875,
-        "title_length": 30,
-        "meta_length": 88,
-        "h2_count": 7,
+        "chars_no_spaces": 2304,
+        "word_tokens": 779,
+        "title_length": 34,
+        "meta_length": 85,
+        "h2_count": 5,
         "h3_count": 0,
-        "internal_links": 3,
+        "internal_links": 2,
         "external_links": 0,
         "image_count": 0,
         "image_alt_missing": 0,
         "table_count": 1,
         "source_count": 2,
-        "numeric_claim_candidates": 1,
+        "numeric_claim_candidates": 0,
         "numeric_high_risk": 0,
         "numeric_medium_risk": 0,
-        "title_similarity": 0.361
+        "title_similarity": 0.418
       },
       "outline": {
         "h2": [
-          "누수와 결로의 핵심 차이 한눈에 파악하기",
-          "1단계: 기상 상태와 발현 시점 역추적",
-          "2단계: 창틀 안쪽 레일과 물구멍(드레인홀) 상태 확인",
-          "3단계: 창호 유리면과 프레임 접합부 확인",
-          "4단계: 외부 실란트(코킹) 노후화 및 균열 육안 점검",
-          "5단계: 창틀 내부 사춤(우레탄폼) 밀실도 의심하기",
-          "상황별 조치 및 행동 가이드"
+          "누수 곰팡이와 결로 곰팡이의 결정적 차이 4가지",
+          "테두리 경계선: 갈색 지도 모양인가, 점묘화 형태인가",
+          "위치로 읽는 구조적 원인: 외벽 접합부인가, 천장 한가운데인가",
+          "수도계량기와 강우 주기 확인으로 검증하기",
+          "흔한 오판과 올바른 대처 순서"
         ],
         "h3": []
       },
@@ -332,24 +330,20 @@
         }
       ],
       "trace": {
-        "numeric_claims": [
-          {
-            "matched_value": "10분",
-            "snippet": "유리 표면의 물방울을 마른 수건으로 닦아낸 후 실내 환기를 10분 이상 진행했을 때 표면 건조 속도를 살펴보면 결로 여부를 쉽게 가늠할 수 있습니다.",
-            "section_h2": "3단계: 창호 유리면과 프레임 접합부 확인",
-            "claim_risk": "LOW",
-            "verification_status": "CONTEXT_ONLY",
-            "classification_reason": "관찰·참고형 표현",
-            "candidate_source_urls": [
-              "https://www.molit.go.kr",
-              "https://www.kict.re.kr"
-            ]
-          }
-        ],
+        "numeric_claims": [],
         "experience_verified": false,
         "unknown_external_links": [],
         "fabricated_source_urls": [],
-        "grounding": {}
+        "grounding": {
+          "h2_count": 5,
+          "evidence_map_count": 5,
+          "grounding_available": true,
+          "evidence_source_count": 3,
+          "verified_claim_count": 0,
+          "max_source_text_similarity": 0.275,
+          "similar_sentence": "육안 관찰과 생활 패턴 점검만으로도 두 현상을 구별할 수 있는 핵심 기준을 정리해 드립니다.",
+          "similar_source_id": "S2"
+        }
       },
       "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다. Warning이 남아 있으면 100점이 될 수 없습니다."
     },
@@ -396,7 +390,7 @@
   },
   "database": {
     "exists": true,
-    "drafts": 1,
+    "drafts": 2,
     "experiences": 0,
     "published": 0,
     "approved": 0,
@@ -448,6 +442,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T15:05:35+09:00"
+    "updated_at": "2026-10-09T15:08:37+09:00"
   }
 }
