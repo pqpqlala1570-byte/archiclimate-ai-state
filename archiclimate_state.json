@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T15:59:21+09:00",
+  "generated_at": "2026-10-09T16:00:07+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "article automation generated",
+    "last_action": "AI editorial polish",
     "result": "OK",
     "detail": "draft_id=2 qc=PASS score=98",
-    "updated_at": "2026-10-09T15:08:36+09:00"
+    "updated_at": "2026-10-09T16:00:01+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -123,7 +123,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T15:57:59+09:00"
+    "updated_at": "2026-10-09T16:00:02+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -266,8 +266,8 @@
     "draft_id": 2,
     "status": "DRAFT",
     "topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
-    "title": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유와 구별법",
-    "search_description": "벽지에 번진 곰팡이가 배관 누수 때문인지 환기나 단열 결로 때문인지 번짐 형태, 얼룩의 경계면, 발생 위치의 차이로 명확히 판별하는 기준을 정리했습니다.",
+    "title": "누수 곰팡이와 결로 곰팡이, 흔적 차이와 구별 단서",
+    "search_description": "벽지에 번진 곰팡이가 배관 누수인지 단열·환기 결로인지 얼룩 형태, 경계면, 발생 위치와 생활 점검을 통해 원인 가능성을 좁히는 기준을 정리했습니다.",
     "permalink": "leak-vs-condensation-mold-differences",
     "provider": "gemini-3.8-flash",
     "source_count": 2,
@@ -279,10 +279,10 @@
       "warning_count": 0,
       "info_count": 1,
       "metrics": {
-        "chars_no_spaces": 2304,
-        "word_tokens": 779,
-        "title_length": 34,
-        "meta_length": 85,
+        "chars_no_spaces": 2391,
+        "word_tokens": 829,
+        "title_length": 28,
+        "meta_length": 83,
         "h2_count": 5,
         "h3_count": 0,
         "internal_links": 2,
@@ -294,15 +294,15 @@
         "numeric_claim_candidates": 0,
         "numeric_high_risk": 0,
         "numeric_medium_risk": 0,
-        "title_similarity": 0.418
+        "title_similarity": 0.308
       },
       "outline": {
         "h2": [
-          "누수 곰팡이와 결로 곰팡이의 결정적 차이 4가지",
-          "테두리 경계선: 갈색 지도 모양인가, 점묘화 형태인가",
-          "위치로 읽는 구조적 원인: 외벽 접합부인가, 천장 한가운데인가",
-          "수도계량기와 강우 주기 확인으로 검증하기",
-          "흔한 오판과 올바른 대처 순서"
+          "누수와 결로에 따른 곰팡이 흔적 비교",
+          "테두리 경계선: 번진 수성 얼룩 테두리인가, 흩어진 점 형태인가",
+          "위치로 살펴보는 단서: 외벽 접합부인가, 천장 한가운데인가",
+          "수도계량기와 강우 주기 점검을 통한 단서 확인",
+          "흔한 오판과 단계별 대처 요령"
         ],
         "h3": []
       },
@@ -325,8 +325,8 @@
           "grounding_available": true,
           "evidence_source_count": 3,
           "verified_claim_count": 0,
-          "max_source_text_similarity": 0.275,
-          "similar_sentence": "육안 관찰과 생활 패턴 점검만으로도 두 현상을 구별할 수 있는 핵심 기준을 정리해 드립니다.",
+          "max_source_text_similarity": 0.278,
+          "similar_sentence": "단, 미세 누수나 배수관 누수는 계량기에 잡히지 않을 수 있으므로 단독 판단 기준으로 삼지는 않습니다.",
           "similar_source_id": "S2"
         }
       },
@@ -427,6 +427,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T15:59:21+09:00"
+    "updated_at": "2026-10-09T16:00:07+09:00"
   }
 }
