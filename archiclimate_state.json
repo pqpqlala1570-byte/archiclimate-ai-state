@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:25:32+09:00",
-  "engine_version": "V5.1.5",
+  "generated_at": "2026-10-09T17:50:04+09:00",
+  "engine_version": "V5.1.7",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "daily content automation",
@@ -444,6 +444,7 @@
     "eligible_posts": 4,
     "system_matched": 0,
     "historical_matched": 16,
+    "known_topics": null,
     "min_impressions": 20,
     "min_eligible_posts": 2
   },
@@ -485,11 +486,17 @@
     "grounding_summary": true,
     "evidence_coverage_summary": true,
     "gsc_feedback_summary": true,
-    "historical_blogger_bootstrap": true
+    "historical_blogger_bootstrap": true,
+    "broad_domain_discovery": true,
+    "top3_domain_diversity": true,
+    "multiaxis_topic_learning": true,
+    "pair_performance_learning": true,
+    "recency_decay": true,
+    "topic_saturation_penalty": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:25:32+09:00"
+    "updated_at": "2026-10-09T17:50:04+09:00"
   }
 }
