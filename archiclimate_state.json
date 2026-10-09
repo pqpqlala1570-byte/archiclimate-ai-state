@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:52:59+09:00",
+  "generated_at": "2026-10-09T18:07:47+09:00",
   "engine_version": "V5.1.7",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,44 +10,44 @@
     "updated_at": "2026-10-09T17:52:52+09:00"
   },
   "ui": {
-    "current_page": "자동화",
-    "page_title": "① 블로그 자동화",
+    "current_page": "학습",
+    "page_title": "⑤ 자료·강의 학습",
     "controls": [
       {
-        "id": "run_daily_content",
-        "label": "오늘의 콘텐츠 자동 분석 시작",
+        "id": "learning_fetch_url",
+        "label": "URL 본문 가져오기",
         "kind": "button",
-        "section": "자동분석",
+        "section": "학습",
         "visible": true,
-        "enabled": true,
+        "enabled": false,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_1",
-        "label": "1번 주제로 선택",
+        "id": "learning_save_core",
+        "label": "핵심 강의로 저장",
         "kind": "button",
-        "section": "TOP3",
+        "section": "학습",
         "visible": true,
-        "enabled": true,
+        "enabled": false,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_2",
-        "label": "2번 주제로 선택",
+        "id": "learning_extract_rules",
+        "label": "이 자료에서 글쓰기 규칙 추출",
         "kind": "button",
-        "section": "TOP3",
+        "section": "학습",
         "visible": true,
-        "enabled": true,
+        "enabled": false,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_3",
-        "label": "3번 주제로 선택",
+        "id": "learning_save_rule",
+        "label": "규칙 저장",
         "kind": "button",
-        "section": "TOP3",
+        "section": "편집규칙",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -55,21 +55,16 @@
       }
     ],
     "available_actions": [
-      "오늘의 콘텐츠 자동 분석 시작",
-      "1번 주제로 선택",
-      "2번 주제로 선택",
-      "3번 주제로 선택"
+      "규칙 저장"
     ],
-    "recommended_control_id": "select_top3",
+    "recommended_control_id": null,
     "selection": {
-      "mode": "APPROVAL MODE"
+      "mode": "APPROVAL MODE",
+      "learning_sources": 88,
+      "active_rules": 37
     },
     "notice": "",
-    "counters": {
-      "top3": 3,
-      "selected": 0,
-      "drafts": 2
-    },
+    "counters": {},
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -126,7 +121,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T17:52:52+09:00"
+    "updated_at": "2026-10-09T18:07:40+09:00"
   },
   "automation": {
     "version": "V5.1.7",
@@ -550,6 +545,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:52:59+09:00"
+    "updated_at": "2026-10-09T18:07:47+09:00"
   }
 }
