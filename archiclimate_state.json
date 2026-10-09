@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:47:23+09:00",
+  "generated_at": "2026-10-09T20:47:39+09:00",
   "engine_version": "V5.3.6",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -146,7 +146,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:47:09+09:00"
+    "updated_at": "2026-10-09T20:47:27+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -398,20 +398,20 @@
     "qc": {
       "version": "pro-qc-v3",
       "publish_gate": "PASS",
-      "editorial_readiness_score": 98,
+      "editorial_readiness_score": 100,
       "critical_count": 0,
       "warning_count": 0,
-      "info_count": 1,
+      "info_count": 0,
       "metrics": {
-        "chars_no_spaces": 2391,
-        "word_tokens": 829,
+        "chars_no_spaces": 2440,
+        "word_tokens": 845,
         "title_length": 28,
         "meta_length": 83,
         "h2_count": 5,
         "h3_count": 0,
         "internal_links": 2,
-        "external_links": 0,
-        "image_count": 0,
+        "external_links": 1,
+        "image_count": 1,
         "image_alt_missing": 0,
         "table_count": 1,
         "source_count": 2,
@@ -435,14 +435,7 @@
         ],
         "h3": []
       },
-      "issues": [
-        {
-          "severity": "INFO",
-          "code": "IMAGE_NONE",
-          "message": "본문 이미지가 없습니다. 승인 공식요건은 아니며, 필요한 경우 대표/설명 이미지를 추가하세요.",
-          "blocking": false
-        }
-      ],
+      "issues": [],
       "trace": {
         "numeric_claims": [],
         "experience_verified": false,
@@ -517,7 +510,7 @@
     "published": 1,
     "approved": 0,
     "verified_experiences": 0,
-    "draft_versions": 4,
+    "draft_versions": 5,
     "publish_checks": 2,
     "gsc_snapshots": 4
   },
@@ -610,6 +603,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:47:23+09:00"
+    "updated_at": "2026-10-09T20:47:39+09:00"
   }
 }
