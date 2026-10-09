@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T14:46:01+09:00",
-  "engine_version": "V4.4.2",
+  "generated_at": "2026-10-09T15:02:46+09:00",
+  "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "draft edited and rechecked",
@@ -367,7 +367,8 @@
         ],
         "experience_verified": false,
         "unknown_external_links": [],
-        "fabricated_source_urls": []
+        "fabricated_source_urls": [],
+        "grounding": {}
       },
       "score_note": "내부 편집 준비도 점수이며 AdSense 승인 확률이 아닙니다. Warning이 남아 있으면 100점이 될 수 없습니다."
     },
@@ -423,6 +424,13 @@
     "publish_checks": 0,
     "gsc_snapshots": 0
   },
+  "learning": {
+    "sources": 3,
+    "full_text": 3,
+    "core_courses": 3,
+    "active_rules": 37,
+    "claims": 7
+  },
   "connections": {
     "naver_credentials_present": true,
     "gemini_key_present": true,
@@ -451,11 +459,14 @@
     "workflow_summary": true,
     "errors_and_last_action": true,
     "draft_quality_summary": true,
-    "post_publish_verification_summary": true
+    "post_publish_verification_summary": true,
+    "learning_summary": true,
+    "grounding_summary": true,
+    "evidence_coverage_summary": true
   },
   "bridge": {
     "transport": "github-sanitized-state",
-    "version": "V4.4.2",
-    "updated_at": "2026-10-09T14:46:01+09:00"
+    "version": "V5.0.0",
+    "updated_at": "2026-10-09T15:02:46+09:00"
   }
 }
