@@ -1,7 +1,7 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:31:17+09:00",
-  "engine_version": "V5.3.4",
+  "generated_at": "2026-10-09T20:34:51+09:00",
+  "engine_version": "V5.3.5",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
     "last_action": "ai image generated",
@@ -601,11 +601,13 @@
     "ai_image_role_routing": true,
     "github_public_image_hosting": true,
     "gemini_image_compat_hotfix": true,
-    "current_draft_banner": true
+    "current_draft_banner": true,
+    "gemini_interactions_api": true,
+    "gemini_image_model": "gemini-3.1-flash-image"
   },
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:31:17+09:00"
+    "updated_at": "2026-10-09T20:34:51+09:00"
   }
 }
