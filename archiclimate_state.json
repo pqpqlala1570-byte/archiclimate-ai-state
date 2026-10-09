@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T20:26:03+09:00",
+  "generated_at": "2026-10-09T20:26:50+09:00",
   "engine_version": "V5.3.3",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "image candidates searched",
-    "result": "OK",
-    "detail": "draft_id=2 provider=Wikimedia Commons mode=comparison left=4 right=4",
-    "updated_at": "2026-10-09T20:15:38+09:00"
+    "last_action": "ai image generated",
+    "result": "ERROR",
+    "detail": "draft_id=2 RuntimeError: Gemini 이미지 생성 실패 HTTP 400: Invalid value at 'generation_config.response_format.image.aspect_ratio' (type.googleapis.com/google.ai.generativelanguage.v1.ImageResponseFormat.AspectRatio), \"16:9\"\nInvalid value at 'generation_config.response_format.image.image_size' (type.googleapis.com/google.ai.generativelanguage.v1.ImageResponseFormat.ImageSize), \"1K\"",
+    "updated_at": "2026-10-09T20:26:35+09:00"
   },
   "ui": {
     "current_page": "초안",
@@ -145,7 +145,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T20:25:58+09:00"
+    "updated_at": "2026-10-09T20:26:35+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -604,6 +604,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T20:26:03+09:00"
+    "updated_at": "2026-10-09T20:26:50+09:00"
   }
 }
