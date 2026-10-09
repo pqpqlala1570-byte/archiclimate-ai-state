@@ -1,13 +1,13 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T15:04:19+09:00",
+  "generated_at": "2026-10-09T15:05:35+09:00",
   "engine_version": "V5.1.0",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
-    "last_action": "daily content automation",
+    "last_action": "experience auto match",
     "result": "OK",
-    "detail": "sources=20 archived=20 top3=3 mode=APPROVAL MODE",
-    "updated_at": "2026-10-09T15:04:15+09:00"
+    "detail": "no verified match; continue without fabricated experience",
+    "updated_at": "2026-10-09T15:05:24+09:00"
   },
   "ui": {
     "current_page": "자동화",
@@ -52,22 +52,34 @@
         "enabled": true,
         "danger": false,
         "description": ""
+      },
+      {
+        "id": "generate_article",
+        "label": "글 자동 제작",
+        "kind": "button",
+        "section": "글작성",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
       }
     ],
     "available_actions": [
       "오늘의 콘텐츠 자동 분석 시작",
       "1번 주제로 선택",
       "2번 주제로 선택",
-      "3번 주제로 선택"
+      "3번 주제로 선택",
+      "글 자동 제작"
     ],
-    "recommended_control_id": "select_top3",
+    "recommended_control_id": "publish_draft",
     "selection": {
+      "selected_topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
       "mode": "APPROVAL MODE"
     },
     "notice": "",
     "counters": {
       "top3": 3,
-      "selected": 0,
+      "selected": 1,
       "drafts": 1
     },
     "workflow": [
@@ -83,8 +95,8 @@
       {
         "stage": "TOPIC",
         "title": "TOP3 선택",
-        "status": "ACTION",
-        "detail": "분석 결과 TOP3 중 하나 선택",
+        "status": "DONE",
+        "detail": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
         "page": "자동화",
         "control_id": "select_top3",
         "control_label": "TOP3 중 선택"
@@ -92,8 +104,8 @@
       {
         "stage": "EXPERIENCE",
         "title": "실제 경험 자동처리",
-        "status": "WAIT",
-        "detail": "주제 선택 후 기존 경험 DB를 자동 확인",
+        "status": "DONE",
+        "detail": "기존 검증 경험을 자동 매칭하고, 없으면 경험 없이 자동 진행",
         "page": "자동화",
         "control_id": null,
         "control_label": null
@@ -102,7 +114,7 @@
         "stage": "DRAFT",
         "title": "글 자동 제작",
         "status": "DONE",
-        "detail": "주제 선택 후 자동 진행",
+        "detail": "본문·SEO 패키지·QC를 자동 생성",
         "page": "자동화",
         "control_id": "generate_article",
         "control_label": "글 자동 제작"
@@ -126,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T15:04:15+09:00"
+    "updated_at": "2026-10-09T15:05:25+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -260,10 +272,10 @@
         "why_recommended": "관련 자료 1건·채널 1개 / 기존 글 유사도 0.36 / DIAGNOSIS 의도"
       }
     ],
-    "selected_topic": null,
-    "has_experience": null,
+    "selected_topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
+    "has_experience": false,
     "experience_id": null,
-    "status": "TOP3_READY"
+    "status": "READY_FOR_DRAFT"
   },
   "draft_review": {
     "draft_id": 1,
@@ -436,6 +448,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T15:04:19+09:00"
+    "updated_at": "2026-10-09T15:05:35+09:00"
   }
 }
