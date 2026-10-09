@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T17:23:14+09:00",
+  "generated_at": "2026-10-09T17:25:00+09:00",
   "engine_version": "V5.1.5",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,14 +10,54 @@
     "updated_at": "2026-10-09T17:23:02+09:00"
   },
   "ui": {
-    "current_page": "성과",
-    "page_title": "④ Search Console 성과",
+    "current_page": "자동화",
+    "page_title": "① 블로그 자동화",
     "controls": [
       {
-        "id": "gsc_28d",
-        "label": "GSC 최근 28일 성과 불러오기",
+        "id": "run_daily_content",
+        "label": "오늘의 콘텐츠 자동 분석 시작",
         "kind": "button",
-        "section": "성과",
+        "section": "자동분석",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_1",
+        "label": "1번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_2",
+        "label": "2번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "select_top3_3",
+        "label": "3번 주제로 선택",
+        "kind": "button",
+        "section": "TOP3",
+        "visible": true,
+        "enabled": true,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "generate_article",
+        "label": "글 자동 제작",
+        "kind": "button",
+        "section": "글작성",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -25,14 +65,23 @@
       }
     ],
     "available_actions": [
-      "GSC 최근 28일 성과 불러오기"
+      "오늘의 콘텐츠 자동 분석 시작",
+      "1번 주제로 선택",
+      "2번 주제로 선택",
+      "3번 주제로 선택",
+      "글 자동 제작"
     ],
-    "recommended_control_id": null,
+    "recommended_control_id": "gsc_28d",
     "selection": {
+      "selected_topic": "누수 곰팡이와 결로 곰팡이, 흔적이 다르게 남는 이유",
       "mode": "APPROVAL MODE"
     },
     "notice": "",
-    "counters": {},
+    "counters": {
+      "top3": 3,
+      "selected": 1,
+      "drafts": 2
+    },
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -89,7 +138,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T17:23:02+09:00"
+    "updated_at": "2026-10-09T17:24:59+09:00"
   },
   "automation": {
     "version": "V5.0.0",
@@ -423,6 +472,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T17:23:14+09:00"
+    "updated_at": "2026-10-09T17:25:00+09:00"
   }
 }
