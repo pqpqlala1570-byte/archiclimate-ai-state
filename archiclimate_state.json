@@ -1,6 +1,6 @@
 {
   "schema": "archiclimate-ai-bridge-state-v4",
-  "generated_at": "2026-10-09T19:28:49+09:00",
+  "generated_at": "2026-10-09T19:49:38+09:00",
   "engine_version": "V5.3.1",
   "privacy": "sanitized_operational_state_only",
   "runtime": {
@@ -10,44 +10,54 @@
     "updated_at": "2026-10-09T18:27:27+09:00"
   },
   "ui": {
-    "current_page": "자동화",
-    "page_title": "① 콘텐츠 분석",
+    "current_page": "초안",
+    "page_title": "② 작성·발행 > 초안 검토",
     "controls": [
       {
-        "id": "run_daily_content",
-        "label": "오늘의 콘텐츠 자동 분석 시작",
+        "id": "find_safe_image",
+        "label": "저작권 안전 이미지 찾기",
         "kind": "button",
-        "section": "자동분석",
+        "section": "대표 이미지",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_1",
-        "label": "1번 주제로 선택",
+        "id": "apply_image",
+        "label": "대표 이미지 적용",
         "kind": "button",
-        "section": "TOP3",
+        "section": "대표 이미지",
+        "visible": true,
+        "enabled": false,
+        "danger": false,
+        "description": ""
+      },
+      {
+        "id": "ai_polish_draft",
+        "label": "AI 자동 다듬기 + QC 재검사",
+        "kind": "button",
+        "section": "초안",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_2",
-        "label": "2번 주제로 선택",
+        "id": "save_draft_edit",
+        "label": "수정본 저장 + QC 재검사",
         "kind": "button",
-        "section": "TOP3",
+        "section": "고급 수동 편집",
         "visible": true,
         "enabled": true,
         "danger": false,
         "description": ""
       },
       {
-        "id": "select_top3_3",
-        "label": "3번 주제로 선택",
+        "id": "save_draft_note",
+        "label": "검토 메모 저장",
         "kind": "button",
-        "section": "TOP3",
+        "section": "초안",
         "visible": true,
         "enabled": true,
         "danger": false,
@@ -55,21 +65,30 @@
       }
     ],
     "available_actions": [
-      "오늘의 콘텐츠 자동 분석 시작",
-      "1번 주제로 선택",
-      "2번 주제로 선택",
-      "3번 주제로 선택"
+      "저작권 안전 이미지 찾기",
+      "AI 자동 다듬기 + QC 재검사",
+      "수정본 저장 + QC 재검사",
+      "검토 메모 저장"
     ],
-    "recommended_control_id": "select_top3",
+    "recommended_control_id": null,
     "selection": {
-      "mode": "APPROVAL MODE"
+      "draft_id": 2,
+      "status": "PUBLISHED",
+      "qc_gate": "PASS",
+      "qc_score": 98,
+      "mode": "APPROVAL MODE",
+      "image_candidates": 0,
+      "editable_fields": [
+        "title",
+        "search_description",
+        "permalink",
+        "body_html"
+      ],
+      "preferred_edit_mode": "AI_EDITORIAL_POLISH",
+      "html_manual_edit_is_advanced": true
     },
     "notice": "",
-    "counters": {
-      "top3": 3,
-      "selected": 0,
-      "drafts": 2
-    },
+    "counters": {},
     "workflow": [
       {
         "stage": "ANALYZE",
@@ -126,7 +145,7 @@
         "control_label": "GSC 최근 28일 성과 불러오기"
       }
     ],
-    "updated_at": "2026-10-09T19:28:41+09:00"
+    "updated_at": "2026-10-09T19:49:35+09:00"
   },
   "automation": {
     "version": "V5.2.0",
@@ -398,7 +417,12 @@
         "numeric_claim_candidates": 0,
         "numeric_high_risk": 0,
         "numeric_medium_risk": 0,
-        "title_similarity": 0.308
+        "title_similarity": 0.308,
+        "paragraph_count": 10,
+        "avg_paragraph_chars": 214.2,
+        "max_paragraph_chars": 328,
+        "long_paragraph_count": 0,
+        "very_long_paragraph_count": 0
       },
       "outline": {
         "h2": [
@@ -577,6 +601,6 @@
   "bridge": {
     "transport": "github-sanitized-state",
     "version": "V5.0.0",
-    "updated_at": "2026-10-09T19:28:49+09:00"
+    "updated_at": "2026-10-09T19:49:38+09:00"
   }
 }
